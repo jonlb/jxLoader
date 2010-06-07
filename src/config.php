@@ -27,12 +27,12 @@ $lconfig = array(
                 'images' => 'jxlib/themes/{theme}/images'
             )
         ),
-        'jxlibext' => array(
+        'app' => array(
             'imageUrl' => 'images/',
             'paths' => array(
-                'js' => 'jxlibext/Source',
-                'css' => 'jxlibext/css',
-                'images' => 'jxlib/css/images'
+                'js' => 'app/Source',
+                'css' => 'app/css',
+                'images' => 'app/css/images'
             )
         )
     )

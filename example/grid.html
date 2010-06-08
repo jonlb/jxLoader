@@ -16,15 +16,16 @@ var selector;
 var sorter;
 var resizer;
 
-window.addEvent('domready', function() {
 
-    //You can load dependencies using the $uses() function
-    $uses([
-            'Jx.Plugin.Grid.Prelighter',
-            'Jx.Plugin.Grid.Selector',
-            'Jx.Plugin.Grid.Sorter',
-            'Jx.Plugin.Grid.Resize'
-        ],function(){
+
+//You can load dependencies using the $uses() function
+$uses([
+        'Jx.Plugin.Grid.Prelighter',
+        'Jx.Plugin.Grid.Selector',
+        'Jx.Plugin.Grid.Sorter',
+        'Jx.Plugin.Grid.Resize'
+    ],function(){
+        window.addEvent('domready', function() {
             prelighter = new Jx.Plugin.Grid.Prelighter({});
             selector = new Jx.Plugin.Grid.Selector({});
             sorter = new Jx.Plugin.Grid.Sorter({});
@@ -32,7 +33,7 @@ window.addEvent('domready', function() {
 
             drawToolbar();
             drawGrid();
-    });
+        });
 });
 
 </script>

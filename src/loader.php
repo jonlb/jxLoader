@@ -6,23 +6,14 @@ session_start();
 
 //get config information
 require_once 'config.php';
+require_once 'helpers/functions.php';
 
 $cclass = $cconfig['cacheClass'];
 require_once 'helpers/'.$cclass.'.php';
 $cache = new $cclass($cconfig);
 
-function get_by_key($key, $default) {
-
-    $ret = isset($_REQUEST[$key]) ? $_REQUEST[$key] : $default;
-    if (is_bool($default) && is_string($ret)) {
-        if ($ret === 'true') {
-            $ret = true;
-        } else {
-            $ret = false;
-        }
-    }
-    //echo "<br>$key = "; var_dump($ret);
-    return $ret;
+if (!isset($_SESSION['included'])) {
+    $_SESSION['included'] = array();
 }
 
 //get variables
@@ -39,6 +30,17 @@ $opts = (bool)get_by_key('opts',false);
 $theme = get_by_key('theme','');
 $allDeps = (bool)get_by_key('allDeps', false);
 $clearSession = (bool)get_by_key('clearSession', false);
+$requestPage = (bool)get_by_key('requestPage', false);
+$page = get_by_key('page','');
+
+if ($requestPage) {
+    //generate a GUID and send it to the requesting page
+    $data = new stdClass();
+    $data->page = guid();
+    header('Content-type:application/json');
+    echo json_encode($data);
+    exit();
+}
 
 if (count($files) == 1 && strtolower($files[0]) == 'loader') {
     $mode = 'PROD';
@@ -55,11 +57,11 @@ if ($mode == 'DEV') {
     }
 
     //unset session
-    if ($clearSession && isset($_SESSION['included'])) {
-        unset($_SESSION['included']);
+    if ($clearSession && isset($_SESSION['included'][$page])) {
+        unset($_SESSION['included'][$page]);
     }
     //get exclude list...
-    $exclude = isset($_SESSION['included']) ? $_SESSION['included'] : array();
+    $exclude = isset($_SESSION['included'][$page]) ? $_SESSION['included'][$page] : array();
 
 
     //in development mode
@@ -75,7 +77,7 @@ if ($mode == 'DEV') {
         if ($ret) {
             $source = $ret['source'];
             $included = array_merge($exclude,$ret['included']);
-            $_SESSION['included'] = $included;
+            $_SESSION['included'][$page] = $included;
             //send back with no compression...
             if ($type == 'js') { $type = 'javascript';}
             header('Content-type:text/'.$type);
@@ -98,13 +100,13 @@ if ($mode == 'DEV') {
 
 
     //unset session
-    if ($clearSession && isset($_SESSION['included'])) {
-        unset($_SESSION['included']);
+    if ($clearSession && isset($_SESSION['included'][$page])) {
+        unset($_SESSION['included'][$page]);
     }
     //get exclude list...
     $exclude;
     if (!$allDeps) {
-        $exclude = isset($_SESSION['included']) ? $_SESSION['included'] : array();
+        $exclude = isset($_SESSION['included'][$page]) ? $_SESSION['included'][$page] : array();
     } else {
         $exclude = array();
     }
@@ -115,23 +117,28 @@ if ($mode == 'DEV') {
     if (is_null($ret['included'])) {
         $ret['included'] = array();
     }
-    $_SESSION['included'] = array_merge($exclude,$ret['included']);
+    $_SESSION['included'][$page] = array_merge($exclude,$ret['included']);
 
     if (empty($source)) {
-        $source = "return;";
+        $source = "/* No source to return */";
     }
     if ($compress) {
         //echo "<br>Compressing....";
-        switch ($algorithm){
-            case 'jsmin':
-                require_once 'helpers/jsmin-1.1.1.php';
-                $source = JSMin::minify($source);
-                break;
-            case 'packer':
-                require_once 'helpers/class.JavaScriptPacker.php';
-                $packer = new JavaScriptPacker($source, $encoding, $fast_decode, $special_char);
-                $source = $packer->pack();
-                break;
+        if ($type == 'js') {
+            switch ($algorithm){
+                case 'jsmin':
+                    require_once 'helpers/jsmin-1.1.1.php';
+                    $source = JSMin::minify($source);
+                    break;
+                case 'packer':
+                    require_once 'helpers/class.JavaScriptPacker.php';
+                    $packer = new JavaScriptPacker($source, $encoding, $fast_decode, $special_char);
+                    $source = $packer->pack();
+                    break;
+            }
+        } else {
+             require_once 'helpers/minify_css.php';
+             $source = Minify_CSS_Compressor::process($source);
         }
 
     }

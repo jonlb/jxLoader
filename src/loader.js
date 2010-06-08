@@ -45,19 +45,48 @@ var Loader = new (new Class({
         url: '/loader/loader.php',
         dev: false,
         compress: 'jsmin',
-        loadOptionals: true
+        loadOptionals: true,
+        serial: true,
+        page: null
     },
 
     queue: null,
 
     fn: null,
 
+    counter: 0,
+
+    current: 0,
+
     initialize: function(options){
         this.setOptions(options);
         this.dev = this.options.dev;
+        this.queue = new Hash();
+        if (!$defined(this.options.page)) {
+            this.requestPageId();
+        }
     },
 
-    require: function (files, fn) {
+    requestPageId: function () {
+        var data = {
+            requestPage: true
+        };
+        var request = new Request.JSON({
+            url: this.options.url,
+            data: data,
+            onSuccess: this.processPageId.bind(this)
+        });
+        request.send();
+    },
+
+    processPageId: function (data) {
+        if ($defined(data.page)) {
+            this.options.page = data.page;
+        }
+    },
+
+    require: function (files, fn, serial) {
+        this.options.serial =  $defined(serial)? serial : this.options.serial;
         if (this.dev) {
             this.requestDeps(files, null, fn);
         } else {
@@ -75,14 +104,19 @@ var Loader = new (new Class({
     },
 
     requestDeps: function(files, repos, fn) {
+        if (!$defined(this.options.page)) {
+            this.requestDeps.delay(5,this, [files, repos, fn]);
+            return;
+        }
         var data = {
             file: files,
             repo: repos,
             mode: 'dev',
             depsOnly: true,
-            opts: this.options.loadOptionals
+            opts: this.options.loadOptionals,
+            page: this.options.page
         };
-        this.fn = fn;
+        this.fn.set(this.counter + 1,fn);
         var request = new Request.JSON({
             url: this.options.url,
             data: data,
@@ -92,16 +126,28 @@ var Loader = new (new Class({
     },
 
     loadDeps: function (data) {
-        this.queue = data;
-        this.nextFile();
+        if (this.options.serial) {
+            this.counter++;
+            this.queue.set(this.counter, data);
+        } else {
+            this.queue.get(this.counter).push(data);
+        }
+        if (!this.loading) {
+            this.nextFile();
+        }
     },
 
     nextFile: function () {
-        if (this.queue.length > 0) {
-            var c = this.queue.shift();
-            this.requestFiles(c,null,this.nextFile.bind(this));
+        if (this.queue.get(this.current).length > 0) {
+            var c = this.queue.get(index).shift();
+            this.requestFiles(c,null,this.nextFile.bind(this, index));
         } else {
-            this.fn.run();
+            this.fn.get(this.current).run();
+            this.queue.erase(this.current);
+            if (this.queue.getLength() > 0) {
+                this.current++;
+                this.nextFile();
+            }
         }
     },
 
@@ -140,6 +186,8 @@ var Loader = new (new Class({
         } else {
             a.push('opts=false');
         }
+
+        a.push('page='+this.options.page);
 
         qs1 = a.join('&');
         var jsurl = this.options.url + '?' + qs1;

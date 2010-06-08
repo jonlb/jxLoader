@@ -32,7 +32,7 @@ provides: [Loader]
  */
 /**
  * Class: Loader
- * It will provide the capability to lazy load js, css, and images as they are needed.
+ * It will provide the capability to lazy load js, css, and images (sort of) as they are needed.
  *
  *
  */
@@ -50,7 +50,7 @@ var Loader = new (new Class({
         page: null
     },
 
-    queue: null,
+    requests: null,
 
     fn: null,
 
@@ -61,7 +61,7 @@ var Loader = new (new Class({
     initialize: function(options){
         this.setOptions(options);
         this.dev = this.options.dev;
-        this.queue = new Hash();
+        this.requests = new Hash();
         if (!$defined(this.options.page)) {
             this.requestPageId();
         }
@@ -85,38 +85,54 @@ var Loader = new (new Class({
         }
     },
 
-    require: function (files, fn, serial) {
-        this.options.serial =  $defined(serial)? serial : this.options.serial;
+    require: function (classes, fn, key, prereqs) {
         if (this.dev) {
-            this.requestDeps(files, null, fn);
+            key = $defined(key) ? key : 'set'+ (this.counter++);
+            this.requests.set(key, {
+                classes: classes,
+                fn: fn,
+                prereqs: prereqs,
+                deps: [],
+                loading: false
+            });
+            this.requestDeps(key);
         } else {
-            this.requestFiles(files, null, fn);
+            this.requestFiles(files, null, true, null, fn);
         }
 
     },
 
-    require_repo: function (repos, fn) {
+    require_repo: function (repos, fn, key, prereqs) {
         if (this.dev) {
-            this.requestDeps(null, repos, fn);
+            key = $defined(key) ? key : 'set'+ (this.counter++);
+            this.requests.set(key, {
+                repos: repos,
+                fn: fn,
+                prereqs: prereqs,
+                deps: [],
+                loading: false
+            });
+            this.requestDeps(key);
         } else {
-            this.requestFiles(null, repos, fn);
+            this.requestFiles(null, repos, true, null, fn);
         }
     },
 
-    requestDeps: function(files, repos, fn) {
+    requestDeps: function(key) {
         if (!$defined(this.options.page)) {
-            this.requestDeps.delay(5,this, [files, repos, fn]);
+            this.requestDeps.delay(5,this, key);
             return;
         }
+        var req = this.requests.get(key);
         var data = {
-            file: files,
-            repo: repos,
+            file: req.classes,
+            repo: req.repos,
             mode: 'dev',
             depsOnly: true,
             opts: this.options.loadOptionals,
-            page: this.options.page
+            page: this.options.page,
+            key: key
         };
-        this.fn.set(this.counter + 1,fn);
         var request = new Request.JSON({
             url: this.options.url,
             data: data,
@@ -126,38 +142,55 @@ var Loader = new (new Class({
     },
 
     loadDeps: function (data) {
-        if (this.options.serial) {
-            this.counter++;
-            this.queue.set(this.counter, data);
-        } else {
-            this.queue.get(this.counter).push(data);
-        }
-        if (!this.loading) {
-            this.nextFile();
+        if ($defined(data)) {
+            var req = this.requests.get(data.key);
+            req.set('deps',data.deps);
+            this.run(data.key)
         }
     },
 
-    nextFile: function () {
-        if (this.queue.get(this.current).length > 0) {
-            var c = this.queue.get(index).shift();
-            this.requestFiles(c,null,this.nextFile.bind(this, index));
-        } else {
-            this.fn.get(this.current).run();
-            this.queue.erase(this.current);
-            if (this.queue.getLength() > 0) {
-                this.current++;
-                this.nextFile();
+    run: function (key) {
+        var req = this.requests.get(key);
+        if (req.prereqs.length == 0) {
+            var keys = req.deps.getKeys();
+            if (keys.length > 0) {
+                var dep = keys[0];
+                var css = req.deps.get(key[0]);
+                req.deps.shift();
+                req.loading = true;
+                this.requestFiles(dep, null, css, key, this.fileDone.bind(this,key))
+            } else {
+                req.fn.run();
+                //remove from the hash
+                this.requests.erase(key);
+                //remove key from all prereqs lists
+                this.requests.each(function(request, key2){
+                    if (request.prereqs.contains(key)) {
+                        request.prereqs = request.prereqs.erase(key);
+                        if (request.prereqs.length == 0) {
+                            this.run(key2);
+                        }
+                    }
+                },this);
+
+
             }
         }
     },
 
-    requestFiles: function(files, repos, fn){
+    fileDone: function (key) {
+        var req = this.requests.get(key);
+        req.loading = false;
+        this.run(key);
+    },
+
+    requestFiles: function(files, repos, css, key, fn){
 
         var qs1, qs2;
         var a = [];
         if ($defined(files)) {
             if ($type(files) != 'array') {
-                files = $A([files]);
+                files = [files];
             }
             files.each(function(file){
                 a.push('file[]='+file);
@@ -166,7 +199,7 @@ var Loader = new (new Class({
 
         if ($defined(repos)) {
             if ($type(repos) != 'array') {
-                repos = $A([repos]);
+                repos = [repos];
             }
             repos.each(function(repo){
                 a.push('repo[]='+repo);
@@ -188,22 +221,22 @@ var Loader = new (new Class({
         }
 
         a.push('page='+this.options.page);
+        if ($defined(key)) {
+            a.push('key='+key);
+        }
 
         qs1 = a.join('&');
         var jsurl = this.options.url + '?' + qs1;
-        a.push('theme='+this.options.theme);
-        a.push('type=css');
-        qs2 = a.join('&');
-        var cssurl = this.options.url + '?' + qs2;
-        var c = new Asset.css(cssurl);
+        if (css) {
+            a.push('theme='+this.options.theme);
+            a.push('type=css');
+            qs2 = a.join('&');
+            var cssurl = this.options.url + '?' + qs2;
+            var c = new Asset.css(cssurl);
+        }
         var script = new Asset.javascript(jsurl,{
                 onload: fn
         });
-    },
-
-    jsSuccess: function(name, key){
-        this.loaded.push(name);
-        this.nextFile(key)
     }
 
 }))(options || {});

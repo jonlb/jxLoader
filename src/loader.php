@@ -32,6 +32,7 @@ $allDeps = (bool)get_by_key('allDeps', false);
 $clearSession = (bool)get_by_key('clearSession', false);
 $requestPage = (bool)get_by_key('requestPage', false);
 $page = get_by_key('page','');
+$key = get_by_key('key','');
 
 if ($requestPage) {
     //generate a GUID and send it to the requesting page
@@ -67,9 +68,19 @@ if ($mode == 'DEV') {
     //in development mode
     if ($depsOnly) {
         $deps = $loader->compile_deps($files, $repos, 'jsdeps', $opts, $exclude);
+        //setup deps properly
+        $d = new stdClass();
+        $flat = $loader->get_flat_array();
+        foreach ($deps as $dep) {
+            $css = !empty($flat[$dep]['css']) && count($flat[$dep]['css']) > 0;
+            $d->$dep = $css;
+        }
         //send back as json... this would have been called to get deps by loader.js
+        $data = new stdClass();
+        $data->deps = $d;
+        $data->key = $key;
         header('Content-type:application/json');
-        echo json_encode($deps);
+        echo json_encode($data);
     } else {
         //var_dump($exclude);
         $ret = $loader->compile($files, $repos, $type, false, $theme, $exclude, $opts);

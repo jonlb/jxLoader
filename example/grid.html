@@ -24,7 +24,7 @@ $uses([
         'Jx.Plugin.Grid.Selector',
         'Jx.Plugin.Grid.Sorter',
         'Jx.Plugin.Grid.Resize'
-    ],function(){
+    ], 'gridStart', null, function(){
         window.addEvent('domready', function() {
             prelighter = new Jx.Plugin.Grid.Prelighter({});
             selector = new Jx.Plugin.Grid.Selector({});
@@ -51,7 +51,7 @@ function drawToolbar() {
             'Jx.Menu',
             'Jx.Menu.Item',
             'app/locales'
-        ],function(){
+        ],'menuSetup', null, function(){
             new Jx.Menu({label: {set:'Examples',key:'grid',value:'rowOptions'}}).addTo('buttons').add([
                 new Jx.Menu.Item({
                     label: {set:'Examples',key:'grid',value:'rowPrelight'},
@@ -221,7 +221,7 @@ function drawGrid() {
             'Jx.Record',
             'Jx.Grid.Renderer.Text',
             'Jx.Grid.Renderer.Button'
-        ],function(){
+        ],'drawGrid', ['menuSetup'], function(){
             var parser = new Jx.Store.Parser.JSON();
             var full = new Jx.Store.Strategy.Full();
             var sort = new Jx.Store.Strategy.Sort({sortOnStoreEvents: null});

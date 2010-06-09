@@ -85,7 +85,7 @@ var Loader = new (new Class({
         }
     },
 
-    require: function (classes, fn, key, prereqs) {
+    require: function (classes, key, prereqs, fn) {
         if (this.dev) {
             key = $defined(key) ? key : 'set'+ (this.counter++);
             this.requests.set(key, {

@@ -185,6 +185,10 @@ var Loader = new (new Class({
     },
 
     requestFiles: function(files, repos, css, key, fn){
+        if (!$defined(this.options.page)) {
+            this.requestFiles.delay(5,this, [files,repos, css, key, fn]);
+            return;
+        }
 
         var qs1, qs2;
         var a = [];

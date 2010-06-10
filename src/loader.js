@@ -151,7 +151,7 @@ var Loader = new (new Class({
 
     run: function (key) {
         var req = this.requests.get(key);
-        if (!$defined(reqs.prereqs) || req.prereqs.length == 0) {
+        if (!$defined(req.prereqs) || req.prereqs.length == 0) {
             var keys = req.deps.getKeys();
             if (keys.length > 0) {
                 var dep = keys[0];

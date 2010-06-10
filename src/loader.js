@@ -144,7 +144,7 @@ var Loader = new (new Class({
     loadDeps: function (data) {
         if ($defined(data)) {
             var req = this.requests.get(data.key);
-            req.set('deps',data.deps);
+            req.deps = data.deps;
             this.run(data.key)
         }
     },

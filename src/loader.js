@@ -97,7 +97,7 @@ var Loader = new (new Class({
             });
             this.requestDeps(key);
         } else {
-            this.requestFiles(files, null, true, null, fn);
+            this.requestFiles(classes, null, true, null, fn);
         }
 
     },

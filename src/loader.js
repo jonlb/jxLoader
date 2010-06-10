@@ -152,7 +152,7 @@ var Loader = new (new Class({
     run: function (key) {
         var req = this.requests.get(key);
         if (!$defined(req.prereqs) || req.prereqs.length == 0) {
-            var keys = req.deps.getKeys();
+            var keys = $H(req.deps).getKeys();
             if (keys.length > 0) {
                 var dep = keys[0];
                 var css = req.deps.get(key[0]);
@@ -160,7 +160,6 @@ var Loader = new (new Class({
                 req.loading = true;
                 this.requestFiles(dep, null, css, key, this.fileDone.bind(this,key))
             } else {
-                req.fn.run();
                 //remove from the hash
                 this.requests.erase(key);
                 //remove key from all prereqs lists
@@ -172,7 +171,7 @@ var Loader = new (new Class({
                         }
                     }
                 },this);
-
+                req.fn.run();
 
             }
         }

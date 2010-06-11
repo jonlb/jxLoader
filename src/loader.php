@@ -69,11 +69,11 @@ if ($mode == 'DEV') {
     if ($depsOnly) {
         $deps = $loader->compile_deps($files, $repos, 'jsdeps', $opts, $exclude);
         //setup deps properly
-        $d = new stdClass();
+        $d = array();
         $flat = $loader->get_flat_array();
         foreach ($deps as $dep) {
             $css = !empty($flat[$dep]['css']) && count($flat[$dep]['css']) > 0;
-            $d->$dep = $css;
+            $d[] = $dep.':'.$css;
         }
         //send back as json... this would have been called to get deps by loader.js
         $data = new stdClass();

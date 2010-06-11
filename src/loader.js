@@ -144,7 +144,7 @@ var Loader = new (new Class({
     loadDeps: function (data) {
         if ($defined(data)) {
             var req = this.requests.get(data.key);
-            req.deps =$H(data.deps);
+            req.deps =$A(data.deps);
             this.run(data.key)
         }
     },
@@ -152,11 +152,9 @@ var Loader = new (new Class({
     run: function (key) {
         var req = this.requests.get(key);
         if (!$defined(req.prereqs) || req.prereqs.length == 0) {
-            var keys = $H(req.deps).getKeys();
-            if (keys.length > 0) {
-                var dep = keys[0];
-                var css = req.deps.get(key[0]);
-                req.deps.shift();
+            if (req.deps.length > 0) {
+                var dep = req.deps.shift();;
+                var css = !!(dep.split(':')[1]);
                 req.loading = true;
                 this.requestFiles(dep, null, css, key, this.fileDone.bind(this,key))
             } else {

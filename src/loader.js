@@ -105,13 +105,13 @@ var Loader = new (new Class({
     require_repo: function (repos, fn, key, prereqs) {
         if (this.dev) {
             key = $defined(key) ? key : 'set'+ (this.counter++);
-            this.requests.set(key, {
+            this.requests.set(key,new Hash({
                 repos: repos,
                 fn: fn,
                 prereqs: prereqs,
                 deps: [],
                 loading: false
-            });
+            }));
             this.requestDeps(key);
         } else {
             this.requestFiles(null, repos, true, null, fn);
@@ -144,7 +144,7 @@ var Loader = new (new Class({
     loadDeps: function (data) {
         if ($defined(data)) {
             var req = this.requests.get(data.key);
-            req.deps = data.deps;
+            req.deps =$H(data.deps);
             this.run(data.key)
         }
     },

@@ -8,13 +8,7 @@ description: This class is used to create managers to control stores, widgets, o
 license: MIT-style license.
 
 requires:
- - Core/Core
  - Core/Browser
- - Core/Array
- - Core/Function
- - Core/Number
- - Core/String
- - Core/Hash
  - Core/Event
  - Core/Class
  - Core/Class.Extras
@@ -25,6 +19,7 @@ requires:
  - Core/Request.JSON
  - More/Assets
  - Core/DomReady
+ - Option.Page
 
 provides: [Loader]
 

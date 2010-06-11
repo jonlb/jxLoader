@@ -30,21 +30,19 @@ $opts = (bool)get_by_key('opts',false);
 $theme = get_by_key('theme','');
 $allDeps = (bool)get_by_key('allDeps', false);
 $clearSession = (bool)get_by_key('clearSession', false);
-$requestPage = (bool)get_by_key('requestPage', false);
 $page = get_by_key('page','');
 $key = get_by_key('key','');
 
-if ($requestPage) {
-    //generate a GUID and send it to the requesting page
-    $data = new stdClass();
-    $data->page = guid();
-    header('Content-type:application/json');
-    echo json_encode($data);
-    exit();
+$isLoader = false;
+
+if (empty($page)) {
+    //generate a GUID
+    $page = guid();
 }
 
 if (count($files) == 1 && strtolower($files[0]) == 'loader') {
     $mode = 'PROD';
+    $isLoader = true;
 }
 
 if ($mode == 'DEV') {
@@ -132,6 +130,8 @@ if ($mode == 'DEV') {
 
     if (empty($source)) {
         $source = "/* No source to return */";
+    } else if ($isLoader) {
+        $source = str_replace('%page%', $page, $source);
     }
     if ($compress) {
         //echo "<br>Compressing....";

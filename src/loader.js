@@ -57,27 +57,7 @@ var Loader = new (new Class({
         this.setOptions(options);
         this.dev = this.options.dev;
         this.requests = new Hash();
-        if (!$defined(this.options.page)) {
-            this.requestPageId();
-        }
-    },
 
-    requestPageId: function () {
-        var data = {
-            requestPage: true
-        };
-        var request = new Request.JSON({
-            url: this.options.url,
-            data: data,
-            onSuccess: this.processPageId.bind(this)
-        });
-        request.send();
-    },
-
-    processPageId: function (data) {
-        if ($defined(data.page)) {
-            this.options.page = data.page;
-        }
     },
 
     require: function (classes, key, prereqs, fn) {
@@ -114,10 +94,6 @@ var Loader = new (new Class({
     },
 
     requestDeps: function(key) {
-        if (!$defined(this.options.page)) {
-            this.requestDeps.delay(5,this, key);
-            return;
-        }
         var req = this.requests.get(key);
         var data = {
             file: req.classes,
@@ -177,10 +153,6 @@ var Loader = new (new Class({
     },
 
     requestFiles: function(files, repos, css, key, fn){
-        if (!$defined(this.options.page)) {
-            this.requestFiles.delay(5,this, [files,repos, css, key, fn]);
-            return;
-        }
 
         var qs1, qs2;
         var a = [];

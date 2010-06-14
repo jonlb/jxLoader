@@ -1,3 +1,19 @@
+/*
+---
+
+name: Loader
+
+description: This class is used to create managers to control stores, widgets, or other components
+
+license: MIT-style license.
+
+requires:
+ - More/Lang
+
+provides: [Locale]
+
+...
+ */
 MooTools.lang.set('en-US', 'Examples', {
 
   mainToolbar : {

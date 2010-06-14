@@ -124,10 +124,11 @@ var Loader = new (new Class({
         var req = this.requests.get(key);
         if (!$defined(req.prereqs) || req.prereqs.length == 0) {
             if (req.deps.length > 0) {
-                var dep = req.deps.shift();;
-                var css = !!(dep.split(':')[1]);
+                var dep = req.deps.shift();
+                var deps =   dep.split(':');
+                var css = !!(deps[1]);
                 req.loading = true;
-                this.requestFiles(dep, null, css, key, this.fileDone.bind(this,key))
+                this.requestFiles(deps[0], null, css, key, this.fileDone.bind(this,key))
             } else {
                 //remove from the hash
                 this.requests.erase(key);

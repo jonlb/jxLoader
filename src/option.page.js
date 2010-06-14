@@ -15,4 +15,4 @@ provides: [option.page]
 ...
  */
 
-$merge(options, { page: '%page%'});
+options = $merge(options, { page: '%page%'});

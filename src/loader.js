@@ -61,35 +61,44 @@ var Loader = new (new Class({
     },
 
     require: function (classes, key, prereqs, fn) {
+
+        key = $defined(key) ? key : 'set'+ (this.counter++);
+        this.requests.set(key, {
+            classes: classes,
+            fn: fn,
+            prereqs: prereqs,
+            deps: [],
+            loading: false,
+            repos: null
+        });
         if (this.dev) {
-            key = $defined(key) ? key : 'set'+ (this.counter++);
-            this.requests.set(key, {
-                classes: classes,
-                fn: fn,
-                prereqs: prereqs,
-                deps: [],
-                loading: false
-            });
             this.requestDeps(key);
         } else {
-            this.requestFiles(classes, null, true, null, fn);
+            if ($defined(prereqs) && prereqs.length > 0) {
+                fn = this.requestDone.bind(this, key);
+            }
+            this.requestFiles(classes, null, true, key, fn);
         }
 
     },
 
     require_repo: function (repos, fn, key, prereqs) {
+        key = $defined(key) ? key : 'set'+ (this.counter++);
+        this.requests.set(key,new Hash({
+            repos: repos,
+            fn: fn,
+            prereqs: prereqs,
+            deps: [],
+            loading: false,
+            classes: null
+        }));
         if (this.dev) {
-            key = $defined(key) ? key : 'set'+ (this.counter++);
-            this.requests.set(key,new Hash({
-                repos: repos,
-                fn: fn,
-                prereqs: prereqs,
-                deps: [],
-                loading: false
-            }));
             this.requestDeps(key);
         } else {
-            this.requestFiles(null, repos, true, null, fn);
+            if ($defined(prereqs) && prereqs.length > 0) {
+                fn = this.requestDone.bind(this, key);
+            }
+            this.requestFiles(null, repos, true, key, fn);
         }
     },
 
@@ -130,6 +139,7 @@ var Loader = new (new Class({
                 req.loading = true;
                 this.requestFiles(deps[0], null, css, key, this.fileDone.bind(this,key))
             } else {
+                req.fn.run();
                 //remove from the hash
                 this.requests.erase(key);
                 //remove key from all prereqs lists
@@ -151,6 +161,23 @@ var Loader = new (new Class({
         var req = this.requests.get(key);
         req.loading = false;
         this.run(key);
+    },
+
+    requestDone: function (key) {
+        var req = this.requests.get(key);
+        req.loading = false;
+        req.fn.run();
+        //remove from the hash
+        this.requests.erase(key);
+        //remove key from all prereqs lists
+        this.requests.each(function(request, key2){
+            if (request.prereqs.contains(key)) {
+                request.prereqs = request.prereqs.erase(key);
+                if (request.prereqs.length == 0) {
+                    this.requestFiles(request.classes, request.repos, true, key2, this.requestDone.bind(this, key2));
+                }
+            }
+        },this);
     },
 
     requestFiles: function(files, repos, css, key, fn){

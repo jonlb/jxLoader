@@ -1,7 +1,7 @@
 /*
 ---
 
-name: Loader
+name: Locale
 
 description: This class is used to create managers to control stores, widgets, or other components
 

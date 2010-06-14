@@ -171,7 +171,7 @@ var Loader = new (new Class({
         this.requests.erase(key);
         //remove key from all prereqs lists
         this.requests.each(function(request, key2){
-            if (request.prereqs.contains(key)) {
+            if ($defined(request.prereqs) && request.prereqs.contains(key)) {
                 request.prereqs = request.prereqs.erase(key);
                 if (request.prereqs.length == 0) {
                     this.requestFiles(request.classes, request.repos, true, key2, this.requestDone.bind(this, key2));

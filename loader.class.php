@@ -356,7 +356,7 @@ class Loader {
                         //replace for image path
 
                         if ($this->config['rewriteImageUrl']) {
-                            $s = str_ireplace('images/',$this->config['repos'][$r]['imageUrl'], $s); 
+                            $s = str_ireplace($this->config['repos'][$r]['imageUrl'], $this->config['imagePath'],$s); 
                         }
                         //echo "file: <br><pre>" .$s ."</pre>";
                         $sources[] = $s;

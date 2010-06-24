@@ -45,7 +45,10 @@ class Loader {
     }
 
     private function load_repo($name, $config) {
-        $path = $this->config['repoBasePath'] . $config['paths']['js'];
+        $path = $config['paths']['js'];
+        if (!is_dir($path)) {
+            $path = $this->config['repoBasePath'] . $path;
+        }
         //echo "loading from path: $path";
         //grab a recursiveDirectoryIterator and process each file it finds
         $it = new RecursiveDirectoryIterator($path);

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'helpers/yaml.php';
+require_once 'includes/yaml.php';
 
 class Loader {
 
@@ -40,25 +40,44 @@ class Loader {
                 $this->load_repo($name, $c);
                 $result = false;
             }
+            //normalize the paths...
+            if (isset($this->config['repos'][$name]['paths']['css'])) {
+                $p = $this->config['repos'][$name]['paths']['css'];
+                if (strpos($p,'{theme}')) {
+                    list($p,$rest) = explode('{theme}',$p);
+                }
+                $this->config['repos'][$name]['paths']['css'] = $this->find_path($p).DS.'{theme}'.$rest;
+            }
+
+            if (isset($this->config['repos'][$name]['paths']['cssalt'])) {
+                $p = $this->config['repos'][$name]['paths']['cssalt'];
+                if (strpos($p,'{theme}')) {
+                    list($p,$rest) = explode('{theme}',$p);
+                }
+                $this->config['repos'][$name]['paths']['cssalt'] = $this->find_path($p).DS.'{theme}'.$rest;
+            }
+
+            if (isset($this->config['repos'][$name]['paths']['images'])) {
+                $p = $this->config['repos'][$name]['paths']['images'];
+                if (strpos($p,'{theme}')) {
+                    list($p,$rest) = explode('{theme}',$p);
+                }
+                $this->config['repos'][$name]['paths']['images'] = $this->find_path($p).DS.'{theme}'.$rest;
+            }
         }
         return $result;
     }
 
     private function load_repo($name, $config) {
-        $path = $config['paths']['js'];
-        if (!is_dir($path)) {
-            $path = $this->config['repoBasePath'] . $path;
-        }
-        //echo "loading from path: $path";
+        $path = $this->find_path($config['paths']['js']);
+
         //grab a recursiveDirectoryIterator and process each file it finds
         $it = new RecursiveDirectoryIterator($path);
         foreach (new RecursiveIteratorIterator($it) as $filename => $file) {
 
             if ($file->isFile()) {
-                 //echo "<br>checking $filename";
                 $p = $file->getRealPath();
                 $source = file_get_contents($p);
-                //echo "<pre>$source</pre>";
                 $descriptor = array();
 
                 // get contents of first comment
@@ -70,12 +89,9 @@ class Loader {
                     preg_match('/^-{3}\s*$(.*?)^(?:-{3}|\.{3})\s*$/ms', $matches[1], $matches);
 
                     if (!empty($matches)) {
-                        //echo "<br>decoding: <pre>". $matches[1] . "</pre>";
                         $descriptor = YAML::decode($matches[1]);
                     }
                 }
-
-                // echo "descriptor decoded:"; var_dump($descriptor);
                  
                 // populate / convert to array requires and provides
                 $requires = (array)(!empty($descriptor['requires']) ? $descriptor['requires'] : array());
@@ -90,7 +106,7 @@ class Loader {
 
                 }
                 //do same for any optional ones...
-               foreach ($optional as $i => $require) {
+                foreach ($optional as $i => $require) {
                     $optional[$i] = implode('/', $this->parse_name($name, $require));
                 }
 
@@ -101,12 +117,29 @@ class Loader {
                     'optional' => $optional,
                     'path' => $p
                 ));
-
-
             }
-            //die();
         }
 
+
+    }
+
+    private function find_path($path) {
+        if (!is_dir($path)) {
+            $path = $this->config['repoBasePath'] . $path;
+        }
+        $check = realpath($path);
+
+        if ($check === false) {
+            $path = dirname(__FILE__).DS.$path;
+            $check = realpath($path);
+            if ($check === false) {
+                throw new Exception('Unable to locate path '.$config['paths']['js']);
+            } else {
+                return $check;
+            }
+        } else {
+            return $check;
+        }
     }
 
     public function rebuild(){
@@ -137,7 +170,7 @@ class Loader {
 		if (empty($exploded[0])) return array($default, $exploded[1]);
         $exploded2 = explode(':',$exploded[0]);
         $length2 = count($exploded2);
-        if ($length == 1) return array($exploded[0],$exploded[1]);
+        if ($length2 == 1) return array($exploded[0],$exploded[1]);
 		return array($exploded2[0], $exploded[1]);
 	}
 
@@ -150,14 +183,11 @@ class Loader {
     }
 
     public function compile_deps($classes, $repos, $type, $opts = true, $exclude = array()) {
-        //echo "compiling deps...";
 
         if (!is_array($exclude)) {
             $exclude = array();
         }
-        //echo "<br>Checking exclude in compile_deps: "; var_dump($exclude);
         $list = array();
-        //var_dump($repos);
         if (!empty($repos)) {
             foreach ($repos as $repo) {
                 $fa = $this->flatten(array($repo => $this->repos[$repo]));
@@ -171,9 +201,8 @@ class Loader {
                 $r = $this->find_repo($class);
                 //clear visited references
                 foreach ($this->flat as $key => $arr) {
-                    $arr['visited'] = false;
+                    $this->flat[$key]['visited'] = false;
                 }
-                //echo "<br>Class: $class ; Repo from class: $r";
                 $list = $this->includeDependencies($r, $class, $opts, $exclude, $this->flat, $list, $type);
             }
         }
@@ -183,16 +212,11 @@ class Loader {
     public function compile($classes, $repos, $type = 'js', $includeDeps = true, $theme = '', $exclude = array(), $opts = true) {
 
         $deps;
-        //echo "getting deps...";
         if ($includeDeps) {
             $deps = $this->compile_deps($classes, $repos, $type, $opts, $exclude);
         } else {
             $deps = $this->convert_classes_to_dep($classes, $type, $exclude);
         }
-
-        //echo "<br>deps returned:<pre>";
-        //var_dump($deps);
-        //echo "</pre>";
 
         if (count($deps) > 0) {
             $included = array();
@@ -205,10 +229,6 @@ class Loader {
                 $ret = $this->get_css_files($sources, $included, $theme, $deps);
             }
 
-            //echo "<br>returned from GET method: <br><pre>";
-            //var_dump($ret);
-            //echo "</pre>";
-            //return
             return array('included' => $ret['includes'] , 'source' => implode("\n\n",$ret['sources']));
         } else {
             return false;
@@ -222,34 +242,25 @@ class Loader {
         } else {
             $k = $class;
         }
-        //echo "<br>including dependencies for $k";
 
         if (!array_key_exists($k,$flatArray)) {
-            //echo "<br>key doesn't exist...";
             return $list;
         }
         $inf = $flatArray[$k];
         $circ = false;
         if ($inf['visited'] === true && in_array($k,$ml)) {
             //we've been here before.... circular reference!
-            //echo "<br>WE KNOW THIS IS A CIRCULAR REFERENCE!!!<br>";
             $circ = true;
         }
 
-        //echo "<br>type: $type";
-        //echo "<br>path: ".$inf['path'];
-        //echo "<br>exclude: "; var_dump($exclude);
-        //echo "<br>list: ";var_dump($list);
         if (($type=='js' && (in_array($inf['path'],$exclude) || in_array($inf['path'], $list))) ||
             ($type=='css'  && (in_array($k,$exclude) || in_array($k, $list))) ||
             ($type=='jsdeps' && (in_array($k,$list) || in_array($inf['path'],$exclude)))) {
-            //echo "<br>$k excluded or already included...";
             return $list;
         }
         if (!$circ) {
             $requires = $inf['requires'];
             $flatArray[$k]['visited'] = true;
-            //echo "<br>Requires:<br><pre>"; var_dump($requires); echo "</pre>";
             if ($opts && array_key_exists('optional', $inf) && count($inf['optional']) > 0) {
                 $requires = array_merge($requires, $inf['optional']);
             }
@@ -258,11 +269,9 @@ class Loader {
                     list($r, $c) = explode('/',$req);
                     array_push($ml,$k);
                     $list = $this->includeDependencies($r, $c, $opts, $exclude, $flatArray, $list, $type, $ml);
-                    //echo "<br>Coming back to $k level";
                     array_pop($ml);
                 }
             }
-            //echo "<br>adding file... $k";
             if ($type == 'js') {
                 $list[] = $inf['path'];
             } else {
@@ -279,7 +288,6 @@ class Loader {
             $classes = array($classes);
         }
         foreach ($classes as $class) {
-            //echo "<br>Class: $class";
             $class = strtolower($class);
             if (strpos($class,'/') !== false) {
                 if ($type == 'js' && !in_array($this->flat[strtolower($class)]['path'], $exclude)) {
@@ -322,7 +330,6 @@ class Loader {
 
     private function get_js_files($sources, $included, $deps) {
         foreach ($deps as $filename) {
-            //echo "<br>Including $filename";
             $sources[] = file_get_contents($filename);
             $included[] = $filename;
         }
@@ -330,100 +337,73 @@ class Loader {
     }
 
     private function get_css_files($sources, $included, $theme, $deps) {
-       // echo "Deps passed in:<br><pre>";
-        //var_dump($deps);
-        //echo "</pre>";
         foreach ($deps as $dep) {
             //split out repo name
             list($r,$c) = explode('/',$dep);
             $included[] = $dep;
             //get css files
-            $csspath = $this->config['repos'][$r]['paths']['css'];
-            $csspath = str_ireplace('{theme}',$theme,$csspath);
-            $csspath = realpath($this->config['repoBasePath'] . $csspath);
-            $cssfiles = $this->flat[$dep]['css'];
+            if (isset($this->config['repos'][$r]['paths']['css'])) {
+                $csspath = $this->config['repos'][$r]['paths']['css'];
+                $csspath = str_ireplace('{theme}',$theme,$csspath);
+                $csspath = realpath($csspath);
+                $cssfiles = isset($this->flat[$dep]['css']) ? $this->flat[$dep]['css']:'';
 
-            //var_dump($this->flat[$dep]);
+                if (!empty($cssfiles)) {
+                    foreach ($cssfiles as $css) {
+                        $fp = $csspath . '/' . $css . '.css';
+                        if (file_exists($fp)) {
+                            $s = file_get_contents($fp);
+                            //replace for image path
 
+                            if ($this->config['rewriteImageUrl']) {
+                                $s = str_ireplace($this->config['repos'][$r]['imageUrl'], $this->config['imagePath'],$s);
+                            }
+                            $sources[] = $s;
+                        } else {
+                            if (!empty($this->config['repos'][$r]['paths']['cssalt'])) {
+                                $csspathalt = $this->config['repos'][$r]['paths']['cssalt'];
+                                $csspathalt = str_ireplace('{theme}',$theme,$csspathalt);
+                                $csspathalt = realpath($csspathalt);
+                                $fp = $csspathalt . '/' . $css . '.css';
+                                if (file_exists($fp)) {
+                                    $s = file_get_contents($fp);
+                                    //replace for image path
 
-            if (!empty($cssfiles)) {
-                //echo "<br>processing CSS files...<br><pre>";
-                //var_dump($cssfiles);
-                //echo "</pre>";
-                foreach ($cssfiles as $css) {
-                    $fp = $csspath . '/' . $css . '.css';
-                    //echo "<br>file path: $fp";
-
-                    if (file_exists($fp)) {
-                        $s = file_get_contents($fp);
-                        //replace for image path
-
-                        if ($this->config['rewriteImageUrl']) {
-                            $s = str_ireplace($this->config['repos'][$r]['imageUrl'], $this->config['imagePath'],$s); 
-                        }
-                        //echo "file: <br><pre>" .$s ."</pre>";
-                        $sources[] = $s;
-                    } else {
-                        if (!empty($this->config['repos'][$r]['paths']['cssalt'])) {
-                            $csspathalt = $this->config['repos'][$r]['paths']['cssalt'];
-                            //echo "<br>CssPathAlt: $csspathalt";
-                            $csspathalt = str_ireplace('{theme}',$theme,$csspathalt);
-                            //echo "<br>CssPathAlt: $csspathalt";
-                            $csspathalt = realpath($this->config['repoBasePath'] . $csspathalt);
-                            //echo "<br>CssPathAlt: $csspathalt";
-                            $fp = $csspathalt . '/' . $css . '.css';
-                            //echo "<br>checking alternate file path: $fp";
-                            if (file_exists($fp)) {
-                                $s = file_get_contents($fp);
-                                //replace for image path
-
-                                if ($this->config['rewriteImageUrl']) {
-                                    $s = str_ireplace('images/',$this->config['repos'][$r]['imageUrl'], $s);
+                                    if ($this->config['rewriteImageUrl']) {
+                                        $s = str_ireplace('images/',$this->config['repos'][$r]['imageUrl'], $s);
+                                    }
+                                    $sources[] = $s;
                                 }
-                                //echo "file: <br><pre>" .$s ."</pre>";
-                                $sources[] = $s;
+                            }
+                        }
+                    }
+                }
+
+                if ($this->config['moveImagesRelativeToLoader']) {
+                    $imageFiles = $this->flat[$dep]['images'];
+                    if (!empty($imageFiles)) {
+                        //get images and move them
+                        $ipath = $this->config['repos'][$r]['paths']['images'];
+                        if (strpos($ipath,'{theme}') !== false) {
+                            $ipath = str_ireplace('{theme}',$theme,$ipath);
+                        }
+                        $ipath = realpath($ipath);
+
+                        $destImagePath = $this->config['imagePath'];
+
+                        //create dest directory if it's not there
+                        if (!file_exists($destImagePath)) {
+                            mkdir($destImagePath);
+                        }
+
+                        foreach ($imageFiles as $filename) {
+                            if (!file_exists($destImagePath . '/' . $filename)) {
+                                copy($ipath . '/' . $filename, $destImagePath . '/' . $filename);
                             }
                         }
                     }
                 }
             }
-
-            if ($this->config['moveImagesRelativeToLoader']) {
-                $imageFiles = $this->flat[$dep]['images'];
-                if (!empty($imageFiles)) {
-                    //get images and move them
-                    $ipath = $this->config['repos'][$r]['paths']['images'];
-                    //echo "<br>orginating image path:" . $ipath;
-                    if (strpos($ipath,'{theme}') !== false) {
-                        $ipath = str_ireplace('{theme}',$theme,$ipath);
-                    }
-                    //echo "<br>orginating image path:" . $ipath;
-                    $ipath = realpath($this->config['repoBasePath'] . $ipath);
-                    //echo "<br>image path: $ipath";
-
-                    $destImagePath = $this->config['imagePath'];
-                    //$destImagePath = realpath($destImagePath);
-                    //echo "<br>image destination path: $destImagePath";
-
-                    //create dest directory if it's not there
-                    if (!file_exists($destImagePath)) {
-                        mkdir($destImagePath);
-                    }
-
-                    //echo "<br>images:<br><pre>"; var_dump($imageFiles); echo "</pre>";
-                    foreach ($imageFiles as $filename) {
-                        if (!file_exists($destImagePath . '/' . $filename)) {
-                            //echo "<br>original: " . $ipath . '/' . $filename;
-                            //echo "<br>destination: " . $destImagePath . '/' . $filename;
-                            copy($ipath . '/' . $filename, $destImagePath . '/' . $filename);
-                        }
-                    } 
-                }
-            }
-
-
-
-
         }
         return array('includes' => $included, 'sources' => $sources);
     }

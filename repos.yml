@@ -1,0 +1,4275 @@
+---
+core: 
+  Class.Extras.js: 
+    script: Class.Extras.js
+    description: >
+      Contains Utility Classes that can be
+      implemented into your own Classes to
+      ease the execution of many common tasks.
+    license: MIT-style license.
+    requires: 
+      - core/Class
+    provides: 
+      - Chain
+      - Events
+      - Options
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Class\Class.Extras.js
+  Class.js: 
+    script: Class.js
+    description: >
+      Contains the Class Function for easily
+      creating, extending, and implementing
+      reusable Classes.
+    license: MIT-style license.
+    requires: 
+      0: core/$util
+      1: core/Native
+      2: core/Array
+      3: core/String
+      4: core/Function
+      5: core/Number
+      6: core/Hash
+    provides: 
+      - Class
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Class\Class.js
+  Browser.js: 
+    script: Browser.js
+    description: >
+      The Browser Core. Contains Browser
+      initialization, Window and Document, and
+      the Browser Hash.
+    license: MIT-style license.
+    requires: 
+      0: core/Native
+      1: core/$util
+    provides: 
+      - Browser
+      - Window
+      - Document
+      - $exec
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Core\Browser.js
+  Core.js: 
+    script: Core.js
+    description: >
+      The core of MooTools, contains all the
+      base functions and the Native and Hash
+      implementations. Required by all the
+      other scripts.
+    license: MIT-style license.
+    copyright: 'Copyright (c) 2006-2008 [Valerio Proietti](http://mad4milk.net/).'
+    authors: >
+      The MooTools production team
+      (http://mootools.net/developers/)
+    inspiration: 
+      0: 'Class implementation inspired by [Base.js](http://dean.edwards.name/weblog/2006/03/base/) Copyright (c) 2006 Dean Edwards, [GNU Lesser General Public License](http://opensource.org/licenses/lgpl-license.php)'
+      1: 'Some functionality inspired by [Prototype.js](http://prototypejs.org) Copyright (c) 2005-2007 Sam Stephenson, [MIT License](http://opensource.org/licenses/mit-license.php)'
+    provides: 
+      - MooTools
+      - Native
+      - Hash.base
+      - Array.each
+      - $util
+    repo: core
+    requires: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Core\Core.js
+  Element.Dimensions.js: 
+    script: Element.Dimensions.js
+    description: >
+      Contains methods to work with size,
+      scroll, or positioning of Elements and
+      the window object.
+    license: MIT-style license.
+    credits: 
+      0: 'Element positioning based on the [qooxdoo](http://qooxdoo.org/) code and smart browser fixes, [LGPL License](http://www.gnu.org/licenses/lgpl.html).'
+      1: 'Viewport dimensions based on [YUI](http://developer.yahoo.com/yui/) code, [BSD License](http://developer.yahoo.com/yui/license.html).'
+    requires: 
+      - core/Element
+    provides: 
+      - Element.Dimensions
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.Dimensions.js
+  Element.Event.js: 
+    script: Element.Event.js
+    description: >
+      Contains Element methods for dealing
+      with events. This file also includes
+      mouseenter and mouseleave custom Element
+      Events.
+    license: MIT-style license.
+    requires: 
+      0: core/Element
+      1: core/Event
+    provides: 
+      - Element.Event
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.Event.js
+  Element.js: 
+    script: Element.js
+    description: >
+      One of the most important items in
+      MooTools. Contains the dollar function,
+      the dollars function, and an handful of
+      cross-browser, time-saver methods to let
+      you easily work with HTML Elements.
+    license: MIT-style license.
+    requires: 
+      0: core/Window
+      1: core/Document
+      2: core/Array
+      3: core/String
+      4: core/Function
+      5: core/Number
+      6: core/Hash
+    provides: 
+      - Element
+      - Elements
+      - $
+      - $$
+      - Iframe
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.js
+  Element.Style.js: 
+    script: Element.Style.js
+    description: >
+      Contains methods for interacting with
+      the styles of Elements in a fashionable
+      way.
+    license: MIT-style license.
+    requires: 
+      - core/Element
+    provides: 
+      - Element.Style
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.Style.js
+  Fx.CSS.js: 
+    script: Fx.CSS.js
+    description: >
+      Contains the CSS animation logic. Used
+      by Fx.Tween, Fx.Morph, Fx.Elements.
+    license: MIT-style license.
+    requires: 
+      0: core/Fx
+      1: core/Element.Style
+    provides: 
+      - Fx.CSS
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.CSS.js
+  Fx.js: 
+    script: Fx.js
+    description: >
+      Contains the basic animation logic to be
+      extended by all other Fx Classes.
+    license: MIT-style license.
+    requires: 
+      0: core/Chain
+      1: core/Events
+      2: core/Options
+    provides: 
+      - Fx
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.js
+  Fx.Morph.js: 
+    script: Fx.Morph.js
+    description: >
+      Formerly Fx.Styles, effect to transition
+      any number of CSS properties for an
+      element using an object of rules, or CSS
+      based selector rules.
+    license: MIT-style license.
+    requires: 
+      - core/Fx.CSS
+    provides: 
+      - Fx.Morph
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.Morph.js
+  Fx.Transitions.js: 
+    script: Fx.Transitions.js
+    description: >
+      Contains a set of advanced transitions
+      to be used with any of the Fx Classes.
+    license: MIT-style license.
+    credits: 
+      - 'Easing Equations by Robert Penner, <http://www.robertpenner.com/easing/>, modified and optimized to be used with MooTools.'
+    requires: 
+      - core/Fx
+    provides: 
+      - Fx.Transitions
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.Transitions.js
+  Fx.Tween.js: 
+    script: Fx.Tween.js
+    description: >
+      Formerly Fx.Style, effect to transition
+      any CSS property for an element.
+    license: MIT-style license.
+    requires: 
+      - core/Fx.CSS
+    provides: 
+      - Fx.Tween
+      - Element.fade
+      - Element.highlight
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.Tween.js
+  license.js: 
+    repo: core
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\license.js
+  license.txt: 
+    repo: core
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\license.txt
+  Array.js: 
+    script: Array.js
+    description: >
+      Contains Array Prototypes like each,
+      contains, and erase.
+    license: MIT-style license.
+    requires: 
+      0: core/$util
+      1: core/Array.each
+    provides: 
+      - Array
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Array.js
+  Event.js: 
+    script: Event.js
+    description: >
+      Contains the Event Class, to make the
+      event object cross-browser.
+    license: MIT-style license.
+    requires: 
+      0: core/Window
+      1: core/Document
+      2: core/Hash
+      3: core/Array
+      4: core/Function
+      5: core/String
+    provides: 
+      - Event
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Event.js
+  Function.js: 
+    script: Function.js
+    description: >
+      Contains Function Prototypes like
+      create, bind, pass, and delay.
+    license: MIT-style license.
+    requires: 
+      0: core/Native
+      1: core/$util
+    provides: 
+      - Function
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Function.js
+  Hash.js: 
+    script: Hash.js
+    description: >
+      Contains Hash Prototypes. Provides a
+      means for overcoming the JavaScript
+      practical impossibility of extending
+      native Objects.
+    license: MIT-style license.
+    requires: 
+      - core/Hash.base
+    provides: 
+      - Hash
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Hash.js
+  Number.js: 
+    script: Number.js
+    description: >
+      Contains Number Prototypes like limit,
+      round, times, and ceil.
+    license: MIT-style license.
+    requires: 
+      0: core/Native
+      1: core/$util
+    provides: 
+      - Number
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Number.js
+  String.js: 
+    script: String.js
+    description: >
+      Contains String Prototypes like
+      camelCase, capitalize, test, and toInt.
+    license: MIT-style license.
+    requires: 
+      - core/Native
+    provides: 
+      - String
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Native\String.js
+  Request.HTML.js: 
+    script: Request.HTML.js
+    description: >
+      Extends the basic Request Class with
+      additional methods for interacting with
+      HTML responses.
+    license: MIT-style license.
+    requires: 
+      0: core/Request
+      1: core/Element
+    provides: 
+      - Request.HTML
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Request\Request.HTML.js
+  Request.js: 
+    script: Request.js
+    description: >
+      Powerful all purpose Request Class. Uses
+      XMLHTTPRequest.
+    license: MIT-style license.
+    requires: 
+      0: core/Element
+      1: core/Chain
+      2: core/Events
+      3: core/Options
+      4: core/Browser
+    provides: 
+      - Request
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Request\Request.js
+  Request.JSON.js: 
+    script: Request.JSON.js
+    description: >
+      Extends the basic Request Class with
+      additional methods for sending and
+      receiving JSON data.
+    license: MIT-style license.
+    requires: 
+      0: core/Request
+      1: core/JSON
+    provides: 
+      - Request.JSON
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Request\Request.JSON.js
+  scripts.json: 
+    repo: core
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\scripts.json
+  Cookie.js: 
+    script: Cookie.js
+    description: >
+      Class for creating, reading, and
+      deleting browser Cookies.
+    license: MIT-style license.
+    credits: 
+      - >
+        Based on the functions by Peter-Paul
+        Koch (http://quirksmode.org).
+    requires: 
+      - core/Options
+    provides: 
+      - Cookie
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\Cookie.js
+  DomReady.js: 
+    script: DomReady.js
+    description: Contains the custom event domready.
+    license: MIT-style license.
+    requires: 
+      - core/Element.Event
+    provides: 
+      - DomReady
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\DomReady.js
+  JSON.js: 
+    script: JSON.js
+    description: JSON encoder and decoder.
+    license: MIT-style license.
+    See Also: '<http://www.json.org/>'
+    requires: 
+      0: core/Array
+      1: core/String
+      2: core/Number
+      3: core/Function
+      4: core/Hash
+    provides: 
+      - JSON
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\JSON.js
+  Selectors.js: 
+    script: Selectors.js
+    description: >
+      Adds advanced CSS-style querying
+      capabilities for targeting HTML
+      Elements. Includes pseudo selectors.
+    license: MIT-style license.
+    requires: 
+      - core/Element
+    provides: 
+      - Selectors
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\Selectors.js
+  Swiff.js: 
+    script: Swiff.js
+    description: >
+      Wrapper for embedding SWF movies.
+      Supports External Interface
+      Communication.
+    license: MIT-style license.
+    credits: 
+      - >
+        Flash detection & Internet Explorer +
+        Flash Player 9 fix inspired by
+        SWFObject.
+    requires: 
+      0: core/Options
+      1: core/$util
+    provides: 
+      - Swiff
+    repo: core
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\Swiff.js
+more: 
+  Chain.Wait.js: 
+    script: Chain.Wait.js
+    description: >
+      value, Adds a method to inject pauses
+      between chained events.
+    license: MIT-style license.
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Chain
+      1: core/Element
+      2: core/Fx
+      3: more/MooTools.More
+    provides: 
+      - Chain.Wait
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Chain.Wait.js
+  Class.Binds.js: 
+    script: Class.Binds.js
+    description: >
+      Automagically binds specified methods in
+      a class to the instance of the class.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Class
+      1: more/MooTools.More
+    provides: 
+      - Class.Binds
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Class.Binds.js
+  Class.Occlude.js: 
+    script: Class.Occlude.js
+    description: >
+      Prevents a class from being applied to a
+      DOM element twice.
+    license: MIT-style license.
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/1.2.4
+      1: core/Element
+      2: more/MooTools.More
+    provides: 
+      - Class.Occlude
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Class.Occlude.js
+  Class.Refactor.js: 
+    script: Class.Refactor.js
+    description: >
+      Extends a class onto itself with new
+      property, preserving any items attached
+      to the class's namespace.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Class
+      1: more/MooTools.More
+    provides: 
+      - Class.refactor
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Class.Refactor.js
+  Depender.js: 
+    script: Depender.js
+    description: >
+      A stand alone dependency loader for the
+      MooTools library.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Events
+      1: core/Request.JSON
+      2: more/MooTools.More
+      3: more/Log
+    provides: 
+      - Depender
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Core\Depender.js
+  Lang.js: 
+    script: MooTools.Lang.js
+    description: Provides methods for localization.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Events
+      1: more/MooTools.More
+    provides: 
+      - MooTools.Lang
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Core\Lang.js
+  Log.js: 
+    script: Log.js
+    description: >
+      Provides basic logging functionality for
+      plugins to implement.
+    license: MIT-style license
+    authors: 
+      0: Guillermo Rauch
+      1: Thomas Aylott
+      2: Scott Kyle
+    requires: 
+      0: core/Class
+      1: more/MooTools.More
+    provides: 
+      - Log
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Core\Log.js
+  More.js: 
+    script: More.js
+    description: MooTools More
+    license: MIT-style license
+    authors: 
+      0: Guillermo Rauch
+      1: Thomas Aylott
+      2: Scott Kyle
+    requires: 
+      - core/MooTools
+    provides: 
+      - MooTools.More
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Core\More.js
+  Drag.js: 
+    script: Drag.js
+    description: >
+      The base Drag Class. Can be used to drag
+      and resize Elements using mouse events.
+    license: MIT-style license
+    authors: 
+      0: Valerio Proietti
+      1: Tom Occhinno
+      2: Jan Kassens
+    requires: 
+      0: core/Events
+      1: core/Options
+      2: core/Element.Event
+      3: core/Element.Style
+      4: more/MooTools.More
+    provides: 
+      - Drag
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Drag.js
+  Drag.Move.js: 
+    script: Drag.Move.js
+    description: >
+      A Drag extension that provides support
+      for the constraining of draggables to
+      containers and droppables.
+    license: MIT-style license
+    authors: 
+      0: Valerio Proietti
+      1: Tom Occhinno
+      2: Jan Kassens
+      3: Aaron Newton
+      4: Scott Kyle
+    requires: 
+      0: core/Element.Dimensions
+      1: more/Drag
+    provides: 
+      - Drag.Move
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Drag.Move.js
+  Slider.js: 
+    script: Slider.js
+    description: >
+      Class for creating horizontal and
+      vertical slider controls.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Element.Dimensions
+      1: more/Class.Binds
+      2: more/Drag
+      3: more/Element.Dimensions
+      4: more/Element.Measure
+    provides: 
+      - Slider
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Slider.js
+  Sortables.js: 
+    script: Sortables.js
+    description: >
+      Class for creating a drag and drop
+      sorting interface for lists of items.
+    license: MIT-style license
+    authors: 
+      - Tom Occhino
+    requires: 
+      - more/Drag.Move
+    provides: 
+      - Slider
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Sortables.js
+  Element.Delegation.js: 
+    script: Element.Delegation.js
+    description: >
+      Extends the Element native object to
+      include the delegate method for more
+      efficient event management.
+    credits: 
+      - 'Event checking based on the work of Daniel Steigerwald. License: MIT-style license.	Copyright: Copyright (c) 2008 Daniel Steigerwald, daniel.steigerwald.cz'
+    license: MIT-style license
+    authors: 
+      0: Aaron Newton
+      1: Daniel Steigerwald
+    requires: 
+      0: core/Element.Event
+      1: core/Selectors
+      2: more/MooTools.More
+    provides: 
+      - Element.Delegation
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Delegation.js
+  Element.Forms.js: 
+    script: Element.Forms.js
+    description: >
+      Extends the Element native object to
+      include methods useful in managing
+      inputs.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element
+      1: more/MooTools.More
+    provides: 
+      - Element.Forms
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Forms.js
+  Element.Measure.js: 
+    script: Element.Measure.js
+    description: >
+      Extends the Element native object to
+      include methods useful in measuring
+      dimensions.
+    credits: 'Element.measure / .expose methods by Daniel Steigerwald License: MIT-style license. Copyright: Copyright (c) 2008 Daniel Steigerwald, daniel.steigerwald.cz'
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Style
+      1: core/Element.Dimensions
+      2: more/MooTools.More
+    provides: 
+      - Element.Measure
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Measure.js
+  Element.Pin.js: 
+    script: Element.Pin.js
+    description: >
+      Extends the Element native object to
+      include the pin method useful for fixed
+      positioning for elements.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Event
+      1: core/Element.Dimensions
+      2: core/Element.Style
+      3: more/MooTools.More
+    provides: 
+      - Element.Pin
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Pin.js
+  Element.Position.js: 
+    script: Element.Position.js
+    description: >
+      Extends the Element native object to
+      include methods useful positioning
+      elements relative to others.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Dimensions
+      1: more/Element.Measure
+    provides: 
+      - Elements.Position
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Position.js
+  Element.Shortcuts.js: 
+    script: Element.Shortcuts.js
+    description: >
+      Extends the Element native object to
+      include some shortcut methods.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Style
+      1: more/MooTools.More
+    provides: 
+      - Element.Shortcuts
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Shortcuts.js
+  Elements.From.js: 
+    script: Elements.From.js
+    description: >
+      Returns a collection of elements from a
+      string of html.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element
+      1: more/MooTools.More
+    provides: 
+      - Elements.from
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Elements.From.js
+  Form.Request.Append.js: 
+    script: Form.Request.Append.js
+    description: >
+      Handles the basic functionality of
+      submitting a form and updating a dom
+      element with the result. The result is
+      appended to the DOM element instead of
+      replacing its contents.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: more/Form.Request
+      1: more/Fx.Reveal
+      2: more/Elements.from
+    provides: 
+      - Form.Request.Append
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Request.Append.js
+  Form.Request.js: 
+    script: Form.Request.js
+    description: >
+      Handles the basic functionality of
+      submitting a form and updating a dom
+      element with the result.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Event
+      1: core/Request.HTML
+      2: more/Class.Binds
+      3: more/Class.Occlude
+      4: more/Spinner
+      5: more/String.QueryString
+    provides: 
+      - Form.Request
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Request.js
+  Form.Validator.Extras.js: 
+    script: Form.Validator.Extras.js
+    description: >
+      Additional validators for the
+      Form.Validator class.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      - more/Form.Validator
+    provides: 
+      - Form.Validator.Extras
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Validator.Extras.js
+  Form.Validator.Inline.js: 
+    script: Form.Validator.Inline.js
+    description: >
+      Extends Form.Validator to add inline
+      messages.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      - more/Form.Validator
+    provides: 
+      - Form.Validator.Inline
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Validator.Inline.js
+  Form.Validator.js: 
+    script: Form.Validator.js
+    description: >
+      A css-class based form validation
+      system.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Options
+      1: core/Events
+      2: core/Selectors
+      3: core/Element.Event
+      4: core/Element.Style
+      5: core/JSON
+      6: more/Lang
+      7: more/Class.Binds
+      8: more/Date Element.Forms
+      9: more/Form.Validator.English
+      10: more/Element.Shortcuts
+    provides: 
+      - Form.Validator
+      - InputValidator
+      - FormValidator.BaseValidators
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Validator.js
+  OverText.js: 
+    script: OverText.js
+    description: >
+      Shows text over an input that disappears
+      when the user clicks into it. The text
+      remains hidden if the user adds a value.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Options
+      1: core/Events
+      2: core/Element.Event
+      3: more/Class.Binds
+      4: more/Class.Occlude
+      5: more/Element.Position
+      6: more/Element.Shortcuts
+    provides: 
+      - OverText
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\OverText.js
+  Fx.Accordion.js: 
+    script: Fx.Accordion.js
+    description: >
+      An Fx.Elements extension which allows
+      you to easily create accordion type
+      controls.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Element.Event
+      1: more/Fx.Elements
+    provides: 
+      - Fx.Accordion
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Accordion.js
+  Fx.Elements.js: 
+    script: Fx.Elements.js
+    description: >
+      Effect to change any number of CSS
+      properties of any number of Elements.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Fx.CSS
+      1: more/MooTools.More
+    provides: 
+      - Fx.Elements
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Elements.js
+  Fx.Move.js: 
+    script: Fx.Move.js
+    description: >
+      Defines Fx.Move, a class that works with
+      Element.Position.js to transition an
+      element from one location to another.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Fx.Morph
+      1: more/Element.Position
+    provides: 
+      - Fx.Move
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Move.js
+  Fx.Reveal.js: 
+    script: Fx.Reveal.js
+    description: >
+      Defines Fx.Reveal, a class that shows
+      and hides elements with a transition.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Fx.Morph
+      1: more/Element.Shortcuts
+      2: more/Element.Measure
+    provides: 
+      - Fx.Reveal
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Reveal.js
+  Fx.Scroll.js: 
+    script: Fx.Scroll.js
+    description: >
+      Effect to smoothly scroll any element,
+      including the window.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Fx
+      1: core/Element.Event
+      2: core/Element.Dimensions
+      3: more/MooTools.More
+    provides: 
+      - Fx.Scroll
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Scroll.js
+  Fx.Slide.js: 
+    script: Fx.Slide.js
+    description: >
+      Effect to slide an element in and out of
+      view.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Fx Element.Style
+      1: more/MooTools.More
+    provides: 
+      - Fx.Slide
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Slide.js
+  Fx.SmoothScroll.js: 
+    script: Fx.SmoothScroll.js
+    description: >
+      Class for creating a smooth scrolling
+      effect to all internal links on the
+      page.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Selectors
+      1: more/Fx.Scroll
+    provides: 
+      - Fx.SmoothScroll
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.SmoothScroll.js
+  Fx.Sort.js: 
+    script: Fx.Sort.js
+    description: >
+      Defines Fx.Sort, a class that reorders
+      lists with a transition.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Dimensions
+      1: more/Fx.Elements
+      2: more/Element.Measure
+    provides: 
+      - Fx.Sort
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Sort.js
+  HtmlTable.js: 
+    script: HtmlTable.js
+    description: >
+      Builds table elements with methods to
+      add rows.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Options
+      1: core/Events
+      2: more/Class.Occlude
+    provides: 
+      - HtmlTable
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.js
+  HtmlTable.Select.js: 
+    script: HtmlTable.Select.js
+    description: >
+      Builds a stripy, sortable table with
+      methods to add rows. Rows can be
+      selected with the mouse or keyboard
+      navigation.
+    license: MIT-style license
+    authors: 
+      0: Harald Kirschner
+      1: Aaron Newton
+    requires: 
+      0: more/Keyboard
+      1: more/HtmlTable
+      2: more/Class.refactor
+      3: more/Element.Delegation
+    provides: 
+      - HtmlTable.Select
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.Select.js
+  HtmlTable.Sort.js: 
+    script: HtmlTable.Sort.js
+    description: >
+      Builds a stripy, sortable table with
+      methods to add rows.
+    license: MIT-style license
+    authors: 
+      0: Harald Kirschner
+      1: Aaron Newton
+    requires: 
+      0: core/Hash
+      1: more/HtmlTable
+      2: more/Class.refactor
+      3: more/Element.Delegation
+      4: more/Date
+    provides: 
+      - HtmlTable.Sort
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.Sort.js
+  HtmlTable.Zebra.js: 
+    script: HtmlTable.Zebra.js
+    description: >
+      Builds a stripy table with methods to
+      add rows.
+    license: MIT-style license
+    authors: 
+      0: Harald Kirschner
+      1: Aaron Newton
+    requires: 
+      0: more/HtmlTable
+      1: more/Class.refactor
+    provides: 
+      - HtmlTable.Zebra
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.Zebra.js
+  Keyboard.Extras.js: 
+    script: Keyboard.js
+    description: >
+      Enhances Keyboard by adding the ability
+      to name and describe keyboard shortcuts,
+      and the ability to grab shortcuts by
+      name and bind the shortcut to different
+      keys.
+    license: MIT-style license
+    authors: 
+      - Perrin Westrich
+    requires: 
+      0: core/Function
+      1: more/Keyboard.Extras
+    provides: 
+      - Keyboard.Extras
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Keyboard.Extras.js
+  Keyboard.js: 
+    script: Keyboard.js
+    description: >
+      KeyboardEvents used to intercept events
+      on a class for keyboard and format
+      modifiers in a specific order so as to
+      make alt+shift+c the same as
+      shift+alt+c.
+    license: MIT-style license
+    authors: 
+      0: Perrin Westrich
+      1: Aaron Newton
+      2: Scott Kyle
+    requires: 
+      0: core/Events
+      1: core/Options
+      2: core/Element.Event
+      3: more/Log
+    provides: 
+      - Keyboard
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Keyboard.js
+  Mask.js: 
+    script: Mask.js
+    description: Creates a mask element to cover another.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Options
+      1: core/Events
+      2: core/Element.Event
+      3: more/Class.Binds
+      4: more/Element.Position
+      5: more/IframeShim
+    provides: 
+      - Mask
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Mask.js
+  Scroller.js: 
+    script: Scroller.js
+    description: >
+      Class which scrolls the contents of any
+      Element (including the window) when the
+      mouse reaches the Element's boundaries.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Events
+      1: core/Options
+      2: core/Element.Event
+      3: core/Element.Dimensions
+    provides: 
+      - Scroller
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Scroller.js
+  Spinner.js: 
+    script: Spinner.js
+    description: >
+      Adds a semi-transparent overlay over a
+      dom element with a spinnin ajax icon.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Fx.Tween
+      1: more/Class.refactor
+      2: more/Mask
+    provides: 
+      - Spinner
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Spinner.js
+  Tips.js: 
+    script: Tips.js
+    description: >
+      Class for creating nice tips that follow
+      the mouse cursor when hovering an
+      element.
+    license: MIT-style license
+    authors: 
+      0: Valerio Proietti
+      1: Christoph Pojer
+    requires: 
+      0: core/Options
+      1: core/Events
+      2: core/Element.Event
+      3: core/Element.Style
+      4: core/Element.Dimensions
+      5: more/MooTools.More
+    provides: 
+      - Tips
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Tips.js
+  license.js: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\license.js
+  license.txt: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\license.txt
+  Date.Catalan.js: 
+    script: Date.Catalan.js
+    description: Date messages for Catalan.
+    license: MIT-style license
+    authors: 
+      - Alfons Sanchez
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Catalan
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Catalan.js
+  Date.Czech.js: 
+    script: Date.Czech.js
+    description: Date messages for Czech.
+    license: MIT-style license
+    authors: 
+      - Jan Černý chemiX
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Czech
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Czech.js
+  Date.Danish.js: 
+    script: Date.Danish.js
+    description: Date messages for Danish.
+    license: MIT-style license
+    authors: 
+      0: Martin Overgaard
+      1: Henrik Hansen
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Danish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Danish.js
+  Date.Dutch.js: 
+    script: Date.Dutch.js
+    description: Date messages in Dutch.
+    license: MIT-style license
+    authors: 
+      - Lennart Pilon
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Dutch
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Dutch.js
+  Date.English.GB.js: 
+    script: Date.English.GB.js
+    description: Date messages for British English.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.English.GB
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.English.GB.js
+  Date.English.US.js: 
+    script: Date.English.US.js
+    description: Date messages for US English.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.English.US
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.English.US.js
+  Date.Estonian.js: 
+    script: Date.Estonian.js
+    description: Date messages for Estonian.
+    license: MIT-style license
+    authors: 
+      - Kevin Valdek
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Estonian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Estonian.js
+  Date.French.js: 
+    script: Date.French.js
+    description: Date messages in French.
+    license: MIT-style license
+    authors: 
+      0: Nicolas Sorosac
+      1: Antoine Abt
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.French
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.French.js
+  Date.German.CH.js: 
+    script: Date.German.CH.js
+    description: Date messages for German (Switzerland).
+    license: MIT-style license
+    authors: 
+      - Michael van der Weg
+    requires: 
+      0: more/Lang
+      1: more/Date.German
+    provides: 
+      - Date.German.CH
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.German.CH.js
+  Date.German.js: 
+    script: Date.German.js
+    description: Date messages for German.
+    license: MIT-style license
+    authors: 
+      0: Christoph Pojer
+      1: Frank Rossi
+      2: Ulrich Petri
+      3: Fabian Beiner
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.German
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.German.js
+  Date.Italian.js: 
+    script: Date.Italian.js
+    description: Date messages for Italian.
+    license: MIT-style license.
+    authors: 
+      0: Andrea Novero
+      1: Valerio Proietti
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Italian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Italian.js
+  Date.Japanese.js: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Japanese.js
+  Date.Norwegian.js: 
+    script: Date.Norwegian.js
+    description: Date messages in Norwegian.
+    license: MIT-style license
+    authors: 
+      - Espen 'Rexxars' Hovlandsdal
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Norwegian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Norwegian.js
+  Date.Persian.js: 
+    script: Date.Persian.js
+    description: Date messages for Persian.
+    license: MIT-style license
+    authors: 
+      - Amir Hossein Hodjaty Pour
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Persian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Persian.js
+  Date.Polish.js: 
+    script: Date.Polish.js
+    description: Date messages for Polish.
+    license: MIT-style license
+    authors: 
+      - Oskar Krawczyk
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Polish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Polish.js
+  Date.Portuguese.BR.js: 
+    script: Date.Portuguese.BR.js
+    description: Date messages in Portuguese-BR (Brazil).
+    license: MIT-style license
+    authors: 
+      - Fabio Miranda Costa
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Portuguese.BR
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Portuguese.BR.js
+  Date.Russian.js: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Russian.js
+  Date.Spanish.AR.js: 
+    script: Date.Spanish.AR.js
+    description: >
+      Date messages for Spanish (Argentinean
+      variation).
+    license: MIT-style license
+    authors: 
+      - Ãlfons Sanchez & Diego Massanti
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Spanish.AR
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Spanish.AR.js
+  Date.Spanish.js: 
+    script: Date.Spanish.US.js
+    description: Date messages for Spanish.
+    license: MIT-style license
+    authors: 
+      - Ãlfons Sanchez
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Spanish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Spanish.js
+  Date.Swedish.js: 
+    script: Date.Swedish.js
+    description: Date messages for Swedish (SE).
+    license: MIT-style license
+    authors: 
+      - Martin Lundgren
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Swedish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Swedish.js
+  Date.Ukrainian.js: 
+    script: Date.Ukrainian.js
+    description: Date messages for Ukrainian.
+    license: MIT-style license
+    authors: 
+      - Slik
+    requires: 
+      0: more/Lang
+      1: more/Date
+    provides: 
+      - Date.Ukrainian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Ukrainian.js
+  Form.Validator.Arabic.js: 
+    script: Form.Validator.Arabic.js
+    description: Form.Validator messages in Arabic.
+    license: MIT-style license
+    authors: 
+      - Chafik Barbar
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Arabic
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Arabic.js
+  Form.Validator.Catalan.js: 
+    script: Form.Validator.Catalan.js
+    description: Date messages for Catalan.
+    license: MIT-style license
+    authors: 
+      0: Miquel Hudin
+      1: Alfons Sanchez
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Catalan
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Catalan.js
+  Form.Validator.Chinese.js: 
+    script: Form.Validator.Chinese.js
+    description: >
+      Form.Validator messages in chinese (both
+      simplified and traditional).
+    license: MIT-style license
+    authors: 
+      - '陈桂军 - guidy <at> ixuer [dot] net'
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Chinese
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Chinese.js
+  Form.Validator.Czech.js: 
+    script: Form.Validator.Czech.js
+    description: Form Validator messages for Czech.
+    license: MIT-style license
+    authors: 
+      - Jan Černý chemiX
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Czech
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Czech.js
+  Form.Validator.Danish.js: 
+    script: Form.Validator.Danish.js
+    description: Form.Validator messages for Danish.
+    license: MIT-style license
+    authors: 
+      - Martin Overgaard
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Danish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Danish.js
+  Form.Validator.Dutch.js: 
+    script: Form.Validator.Dutch.js
+    description: Form.Validator messages in Dutch.
+    license: MIT-style license
+    authors: 
+      - Lennart Pilon
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Dutch
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Dutch.js
+  Form.Validator.English.js: 
+    script: Form.Validator.English.js
+    description: Form Validator messages for English.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.English
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.English.js
+  Form.Validator.Estonian.js: 
+    script: Form.Validator.Estonian.js
+    description: Date messages for Estonian.
+    license: MIT-style license
+    authors: 
+      - Kevin Valdek
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Estonian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Estonian.js
+  Form.Validator.French.js: 
+    script: Form.Validator.French.js
+    description: Form.Validator messages in French.
+    license: MIT-style license
+    authors: 
+      0: Miquel Hudin
+      1: 'Nicolas Sorosac <nicolas <dot> sorosac <at> gmail <dot> com>'
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.French
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.French.js
+  Form.Validator.German.CH.js: 
+    script: Form.Validator.German.CH.js
+    description: Date messages for German (Switzerland).
+    license: MIT-style license
+    authors: 
+      - Michael van der Weg
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator.German
+    provides: 
+      - Form.Validator.German.CH
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.German.CH.js
+  Form.Validator.German.js: 
+    script: Form.Validator.German.js
+    description: Date messages for German.
+    license: MIT-style license
+    authors: 
+      0: Frank Rossi
+      1: Ulrich Petri
+      2: Fabian Beiner
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.German
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.German.js
+  Form.Validator.Italian.js: 
+    script: Form.Validator.Italian.js
+    description: Form.Validator messages in Italian.
+    license: MIT-style license
+    authors: 
+      0: Leonardo Laureti
+      1: Andrea Novero
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Italian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Italian.js
+  Form.Validator.Japanese.js: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Japanese.js
+  Form.Validator.Norwegian.js: 
+    script: Form.Validator.Norwegian.js
+    description: Form.Validator messages in Norwegian.
+    license: MIT-style license
+    authors: 
+      - Espen 'Rexxars' Hovlandsdal
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Norwegian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Norwegian.js
+  Form.Validator.Persian.js: 
+    script: Form.Validator.Persian.js
+    description: Date messages for Persian.
+    license: MIT-style license
+    authors: 
+      - Amir Hossein Hodjaty Pour
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Persian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Persian.js
+  Form.Validator.Polish.js: 
+    script: Form.Validator.Polish.js
+    description: Date messages for Polish.
+    license: MIT-style license
+    authors: 
+      - Oskar Krawczyk
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Polish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Polish.js
+  Form.Validator.Portuguese.BR.js: 
+    script: Form.Validator.Portuguese.BR.js
+    description: >
+      Form.Validator messages in
+      Portuguese-BR.
+    license: MIT-style license
+    authors: 
+      - Fábio Miranda Costa
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator.Portuguese
+    provides: 
+      - Form.Validator.Portuguese.BR
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Portuguese.BR.js
+  Form.Validator.Portuguese.js: 
+    script: Form.Validator.Portuguese.js
+    description: Form.Validator messages in Portuguese.
+    license: MIT-style license
+    authors: 
+      - Miquel Hudin
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Portuguese
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Portuguese.js
+  Form.Validator.Russian.js: 
+    script: Form.Validator.Russian.js
+    description: >
+      Form.Validator messages in Russian
+      (utf-8 and cp1251).
+    license: MIT-style license
+    authors: 
+      - Chernodarov Egor
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Russian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Russian.js
+  Form.Validator.Spanish.AR.js: 
+    script: Form.Validator.Spanish.AR.js
+    description: Date messages for Spanish (Argentina).
+    license: MIT-style license
+    authors: 
+      - Diego Massanti
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Spanish.AR
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Spanish.AR.js
+  Form.Validator.Spanish.js: 
+    script: Form.Validator.Spanish.js
+    description: Date messages for Spanish.
+    license: MIT-style license
+    authors: 
+      - Ãlfons Sanchez
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Spanish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Spanish.js
+  Form.Validator.Swedish.js: 
+    script: Form.Validator.Swedish.js
+    description: Date messages for Swedish.
+    license: MIT-style license
+    authors: 
+      - Martin Lundgren
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Swedish
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Swedish.js
+  Form.Validator.Ukrainian.js: 
+    script: Form.Validator.Ukrainian.js
+    description: >
+      Form.Validator messages in Ukrainian
+      (utf-8).
+    license: MIT-style license
+    authors: 
+      - Slik
+    requires: 
+      0: more/Lang
+      1: more/Form.Validator
+    provides: 
+      - Form.Validator.Ukrainian
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Ukrainian.js
+  FormValidator.English.js: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\FormValidator.English.js
+  Array.Extras.js: 
+    script: Array.Extras.js
+    description: >
+      Extends the Array native object to
+      include useful methods to work with
+      arrays.
+    license: MIT-style license
+    authors: 
+      - Christoph Pojer
+    requires: 
+      - core/Array
+    provides: 
+      - Array.Extras
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Array.Extras.js
+  Date.Extras.js: 
+    script: Date.Extras.js
+    description: >
+      Extends the Date native object to
+      include extra methods (on top of those
+      in Date.js).
+    license: MIT-style license
+    authors: 
+      0: Aaron Newton
+      1: Scott Kyle
+    requires: 
+      - more/Date
+    provides: 
+      - Date.Extras
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Date.Extras.js
+  Date.js: 
+    script: Date.js
+    description: >
+      Extends the Date native object to
+      include methods useful in managing
+      dates.
+    license: MIT-style license
+    authors: 
+      0: Aaron Newton
+      1: 'Nicholas Barthelemy - https://svn.nbarthelemy.com/date-js/'
+      2: 'Harald Kirshner - mail [at] digitarald.de; http://digitarald.de'
+      3: 'Scott Kyle - scott [at] appden.com; http://appden.com'
+    requires: 
+      0: core/Array
+      1: core/String
+      2: core/Number
+      3: core/Lang
+      4: core/Date.English.US
+      5: more/MooTools.More
+    provides: 
+      - Date
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Date.js
+  Hash.Extras.js: 
+    script: Hash.Extras.js
+    description: >
+      Extends the Hash native object to
+      include getFromPath which allows a path
+      notation to child elements.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Hash.base
+      1: more/MooTools.More
+    provides: 
+      - Hash.Extras
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Hash.Extras.js
+  String.Extras.js: 
+    script: String.Extras.js
+    description: >
+      Extends the String native object to
+      include methods useful in managing
+      various kinds of strings (query strings,
+      urls, html, etc).
+    license: MIT-style license
+    authors: 
+      0: Aaron Newton
+      1: Guillermo Rauch
+    requires: 
+      0: core/String
+      1: core/$util
+      2: core/Array
+    provides: 
+      - String.Extras
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\String.Extras.js
+  String.QueryString.js: 
+    script: String.QueryString.js
+    description: >
+      Methods for dealing with URI query
+      strings.
+    license: MIT-style license
+    authors: 
+      - >
+        Sebastian Markbåge, Aaron Newton,
+        Lennart Pilon, Valerio Proietti
+    requires: 
+      0: core/Array
+      1: core/String
+      2: more/MooTools.More
+    provides: 
+      - String.QueryString
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\String.QueryString.js
+  URI.js: 
+    script: URI.js
+    description: >
+      Provides methods useful in managing the
+      window location and uris.
+    license: MIT-style license
+    authors: 
+      0: Sebastian Markb�ge
+      1: Aaron Newton
+    requires: 
+      0: core/Selectors
+      1: more/String.QueryString
+    provides: 
+      - URI
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\URI.js
+  URI.Relative.js: 
+    script: URI.Relative.js
+    description: >
+      Extends the URI class to add methods for
+      computing relative and absolute urls.
+    license: MIT-style license
+    authors: 
+      - Sebastian Markbåge
+    requires: 
+      0: more/Class.refactor
+      1: more/URI
+    provides: 
+      - URI.Relative
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Native\URI.Relative.js
+  Request.JSONP.js: 
+    script: Request.JSONP.js
+    description: >
+      Defines Request.JSONP, a class for cross
+      domain javascript via script injection.
+    license: MIT-style license
+    authors: 
+      0: Aaron Newton
+      1: Guillermo Rauch
+    requires: 
+      0: core/Element
+      1: core/Request
+      2: more/Log
+    provides: 
+      - Request.JSONP
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Request\Request.JSONP.js
+  Request.Periodical.js: 
+    script: Request.Periodical.js
+    description: >
+      Requests the same URL to pull data from
+      a server but increases the intervals if
+      no data is returned to reduce the load
+    license: MIT-style license
+    authors: 
+      - Christoph Pojer
+    requires: 
+      0: core/Request
+      1: more/MooTools.More
+    provides: 
+      - Request.Periodical
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Request\Request.Periodical.js
+  Request.Queue.js: 
+    script: Request.Queue.js
+    description: >
+      Controls several instances of Request
+      and its variants to run only one request
+      at a time.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element
+      1: core/Request
+      2: more/Log
+    provides: 
+      - Request.Queue
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Request\Request.Queue.js
+  scripts.json: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\scripts.json
+  Assets.js: 
+    script: Assets.js
+    description: >
+      Provides methods to dynamically load
+      JavaScript, CSS, and Image files into
+      the document.
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Element.Event
+      1: more/MooTools.More
+    provides: 
+      - Assets
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Assets.js
+  Color.js: 
+    script: Color.js
+    description: 'Class for creating and manipulating colors in JavaScript. Supports HSB -> RGB Conversions and vice versa.'
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Array
+      1: core/String
+      2: core/Number
+      3: core/Hash
+      4: core/Function
+      5: core/$util
+    provides: 
+      - Color
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Color.js
+  Group.js: 
+    script: Group.js
+    description: >
+      Class for monitoring collections of
+      events
+    license: MIT-style license
+    authors: 
+      - Valerio Proietti
+    requires: 
+      0: core/Events
+      1: more/MooTools.More
+    provides: 
+      - Group
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Group.js
+  Hash.Cookie.js: 
+    script: Hash.Cookie.js
+    description: >
+      Class for creating, reading, and
+      deleting Cookies in JSON format.
+    license: MIT-style license
+    authors: 
+      0: Valerio Proietti
+      1: Aaron Newton
+    requires: 
+      0: core/Cookie
+      1: core/JSON
+      2: more/MooTools.More
+    provides: 
+      - Hash.Cookie
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Hash.Cookie.js
+  IframeShim.js: 
+    script: IframeShim.js
+    description: >
+      Defines IframeShim, a class for
+      obscuring select lists and flash objects
+      in IE.
+    license: MIT-style license
+    authors: 
+      - Aaron Newton
+    requires: 
+      0: core/Element.Event
+      1: core/Element.Style
+      2: core/Options Events
+      3: more/Element.Position
+      4: more/Class.Occlude
+    provides: 
+      - IframeShim
+    repo: more
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\IframeShim.js
+jxlib: 
+  adaptor.combo.js: 
+    name: Jx.Adaptor.Combo
+    description: Namespace for all Jx.Combo adaptors.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor
+    provides: 
+      - Jx.Adaptor.Combo
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\adaptor.combo.js
+  adaptor.js: 
+    name: Jx.Adaptor
+    description: Base class for all Adaptors.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Adaptor
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\adaptor.js
+  adaptor.tree.js: 
+    name: Jx.Adaptor.Tree
+    description: >
+      Base class for all adaptors that fill
+      Jx.Tree widgets. Also acts as the
+      namespace for other Jx.Tree adaptors.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor
+    provides: 
+      - Jx.Adaptor.Tree
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\adaptor.tree.js
+  combo.fill.js: 
+    name: Jx.Adaptor.Combo.Fill
+    description: >
+      Loads data into a Jx.Combo instance from
+      designated column(s) of a data source.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor.Combo
+    provides: 
+      - Jx.Adaptor.Combo.Fill
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\combo.fill.js
+  tree.mptt.js: 
+    name: Jx.Adaptor.Tree.Mptt
+    description: >
+      Fills a Jx.Tree instance from a remote
+      table that represents an MPTT (Modified
+      Preorder Table Traversal) data source.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor.Tree
+    provides: 
+      - Jx.Adaptor.Tree.Mptt
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\tree.mptt.js
+  tree.parent.js: 
+    name: Jx.Adaptor.Tree.Parent
+    description: >
+      Fills a Jx.Tree instance from a standard
+      parent/child/folder style data table.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor.Tree
+    provides: 
+      - Jx.Adaptor.Tree.Parent
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\tree.parent.js
+  common.js: 
+    name: Common
+    description: >
+      Jx namespace with methods and classes
+      common to most Jx widgets
+    license: MIT-style license.
+    requires: 
+      0: Core/Class
+      1: Core/Element
+      2: Core/Browser
+      3: Core/Element.Style
+      4: Core/Request
+      5: Core/Class.Extras
+      6: More/Class.Binds
+      7: Core/Array
+      8: Core/Element.Event
+      9: Core/Element.Dimensions
+      10: More/Element.Measure
+      11: More/Mootools.Lang
+      12: Core/Slick.Finder
+      13: Core/Slick.Parser
+      14: Core/Selectors
+    provides: 
+      - Jx
+    css: 
+      0: license
+      1: reset
+      2: common
+    images: 
+      - a_pixel.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\common.js
+  list.js: 
+    name: Jx.List
+    description: >
+      A class that is used to manage lists of
+      DOM elements
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Object
+      1: jxlib/Jx.Selection
+    provides: 
+      - Jx.List
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\list.js
+  object.js: 
+    name: Jx.Object
+    description: >
+      Base class for all other object in the
+      JxLib framework.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx
+    provides: 
+      - Jx.Object
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\object.js
+  selection.js: 
+    name: Jx.Selection
+    description: >
+      A class to manage selection across
+      multiple list objects
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.Selection
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\selection.js
+  stack.js: 
+    name: Jx.Stack
+    description: >
+      A singleton object for managing a global
+      z-index stack for widgets that need to
+      order themselves in the z-index of the
+      page relative to other such widgets.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx
+    provides: 
+      - Jx.Stack
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\stack.js
+  styles.js: 
+    name: Jx.Styles
+    description: >
+      A singleton object useful for
+      dynamically creating and manipulating
+      CSS styles
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx
+    provides: 
+      - Jx.Styles
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\styles.js
+  widget.js: 
+    name: Jx.Widget
+    description: >
+      Base class for all widgets (visual
+      classes) in the JxLib Framework.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Object
+      1: jxlib/Locale.English.US
+      2: jxlib/Jx.Stack
+    provides: 
+      - Jx.Widget
+    css: 
+      - chrome
+    images: 
+      0: spinner_16.gif
+      1: spinner_24.gif
+    optional: 
+      - More/Spinner
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\widget.js
+  button.js: 
+    name: Jx.Button
+    description: >
+      Jx.Button creates a clickable element
+      that can be added to a web page.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    optional: 
+      - Core/Drag
+    provides: 
+      - Jx.Button
+    css: 
+      - button
+    images: 
+      - button.png
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\button.js
+  color.js: 
+    name: Jx.Button.Color
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Button.Flyout
+      1: jxlib/Jx.ColorPalette
+    provides: 
+      - Jx.Button.Color
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\color.js
+  flyout.js: 
+    name: Jx.Button.Flyout
+    description: >
+      Flyout buttons expose a panel when the
+      user clicks the button.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Button
+    provides: 
+      - Jx.Button.Flyout
+    images: 
+      0: flyout_chrome.png
+      1: emblems.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\flyout.js
+  multi.js: 
+    name: Jx.Button.Multi
+    description: >
+      Multi buttons are used to contain
+      multiple buttons in a drop down list
+      where only one button is actually
+      visible and clickable in the interface.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Button
+      1: jxlib/Jx.Menu
+      2: jxlib/Jx.ButtonSet
+    provides: 
+      - Jx.Button.Multi
+    images: 
+      0: button_multi.png
+      1: button_multi_disclose.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\multi.js
+  set.js: 
+    name: Jx.ButtonSet
+    description: >
+      A ButtonSet manages a set of Jx.Button
+      instances by ensuring that only one of
+      the buttons is active.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.ButtonSet
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\set.js
+  compare.js: 
+    name: Jx.Compare
+    description: >
+      Class that provides functions for
+      comparing various data types. Used by
+      the Jx.Sort class and it's descendants
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Object
+      1: More/Date.Extras
+    provides: 
+      - Jx.Compare
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\compare.js
+  heapsort.js: 
+    name: Jx.Sort.Heapsort
+    description: >
+      An implementation of the heap sort
+      algorithm
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Sort
+    provides: 
+      - Jx.Sort.Heapsort
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\heapsort.js
+  mergesort.js: 
+    name: Jx.Sort.Mergesort
+    description: >
+      An implementation of the merge sort
+      algorithm
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Sort
+    provides: 
+      - Jx.Sort.Mergesort
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\mergesort.js
+  nativesort.js: 
+    name: Jx.Sort.Nativesort
+    description: >
+      An implementation of the Javascript
+      native sorting with the Jx.Sort
+      interface
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Sort
+    provides: 
+      - Jx.Sort.Nativesort
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\nativesort.js
+  parser.js: 
+    name: Jx.Store.Parser
+    description: >
+      Base class for all data parsers. Parsers
+      are used by protocols to get data
+      received or sent in the proper formats.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store
+    provides: 
+      - Jx.Store.Parser
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\parser.js
+  parser.json.js: 
+    name: Jx.Store.Parser.JSON
+    description: >
+      Parser for reading and writting JSON
+      formatted data.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Store.Parser
+      1: Core/JSON
+    provides: 
+      - Jx.Store.Parser.JSON
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\parser.json.js
+  protocol.ajax.js: 
+    name: Jx.Store.Protocol.Ajax
+    description: >
+      Store protocol used to load data from a
+      remote data source via Ajax.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Protocol
+    provides: 
+      - Jx.Store.Protocol.Ajax
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\protocol.ajax.js
+  protocol.js: 
+    name: Jx.Store.Protocol
+    description: Base class for all store protocols.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Response
+    provides: 
+      - Jx.Store.Protocol
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\protocol.js
+  protocol.local.js: 
+    name: Jx.Store.Protocol.Local
+    description: >
+      Store protocol used to load data that is
+      already present in a page as an object.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Protocol
+    provides: 
+      - Jx.Store.Protocol.Local
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\protocol.local.js
+  quicksort.js: 
+    name: Jx.Sort.Quicksort
+    description: >
+      An implementation of the quick sort
+      algorithm.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Sort
+    provides: 
+      - Jx.Sort.Quicksort
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\quicksort.js
+  record.js: 
+    name: Jx.Record
+    description: >
+      The basic record implementation. A store
+      uses records to handle and manipulate
+      data.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.Record
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\record.js
+  response.js: 
+    name: Jx.Store.Response
+    description: >
+      The object used to return response
+      information to strategies.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store
+    provides: 
+      - Jx.Store.Response
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\response.js
+  sort.js: 
+    name: Jx.Sort
+    description: >
+      Base class for the sort algorithm
+      implementations
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Object
+      1: jxlib/Jx.Compare
+    provides: 
+      - Jx.Sort
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\sort.js
+  store.js: 
+    name: Jx.Store
+    description: An implementation of a basic data store.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Object
+      1: jxlib/Jx.Record
+    provides: 
+      - Jx.Store
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\store.js
+  strategy.full.js: 
+    name: Jx.Store.Strategy.Full
+    description: >
+      Strategy for loading the full data set
+      from a source.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Strategy
+    provides: 
+      - Jx.Store.Strategy.Full
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.full.js
+  strategy.js: 
+    name: Jx.Store.Strategy
+    description: Base class for all store strategies.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store
+    provides: 
+      - Jx.Store.Strategy
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.js
+  strategy.paginate.js: 
+    name: Jx.Store.Strategy.Paginate
+    description: >
+      Strategy for loading data in pages and
+      moving between them. This strategy makes
+      sure the store only contains the current
+      page's data.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Strategy
+    provides: 
+      - Jx.Store.Strategy.Paginate
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.paginate.js
+  strategy.progressive.js: 
+    name: Jx.Store.Strategy.Progressive
+    description: >
+      Strategy based on Strategy.Paginate but
+      loads data progressively without
+      removing old or curent data from the
+      store.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Strategy.Paginate
+    provides: 
+      - Jx.Store.Strategy.Progressive
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.progressive.js
+  strategy.save.js: 
+    name: Jx.Store.Strategy.Save
+    description: >
+      Strategy used for saving data back to a
+      source. Can be called manually or setup
+      to automatically save on every change.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Store.Strategy
+    provides: 
+      - Jx.Store.Strategy.Save
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.save.js
+  strategy.sort.js: 
+    name: Jx.Store.Strategy.Sort
+    description: >
+      Strategy used for sorting results in a
+      store after they are loaded.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Store.Strategy
+      1: jxlib/Jx.Sort.Mergesort
+      2: jxlib/Jx.Compare
+    provides: 
+      - Jx.Store.Strategy.Sort
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.sort.js
+  colorpalette.js: 
+    name: Jx.ColorPalette
+    description: >
+      A Jx.ColorPalette presents a user
+      interface for selecting colors.  This is
+      typically combined with a
+      Jx.Button.Color which embeds the color
+      palette in a flyout.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    provides: 
+      - Jx.ColorPalette
+    css: 
+      - color
+    images: 
+      - grid.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\colorpalette.js
+  notice.js: 
+    name: Jx.Notice
+    description: >
+      Represents a single item used in a
+      notifier.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.ListItem
+    provides: 
+      - Jx.Notice
+    images: 
+      0: notice.png
+      1: notice_error.png
+      2: notice_warning.png
+      3: notice_success.png
+      4: icons.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\notice.js
+  notifier.float.js: 
+    name: Jx.Notifier.Float
+    description: >
+      A notification area that floats in a
+      container above other content.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Notifier
+    provides: 
+      - Jx.Notifier.Float
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\notifier.float.js
+  notifier.js: 
+    name: Jx.Notifier
+    description: >
+      Base class for notification areas that
+      can hold temporary notices.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.ListView
+      1: jxlib/Jx.Notice
+      2: Core/Fx.Tween
+    provides: 
+      - Jx.Notifier
+    css: 
+      - notification
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\notifier.js
+  progressbar.js: 
+    name: Jx.Progressbar
+    description: A css-based progress bar.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: Core/Fx.Tween
+    provides: 
+      - Jx.Progressbar
+    css: 
+      - progressbar
+    images: 
+      - progressbar.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\progressbar.js
+  scrollbar.js: 
+    name: Jx.Scrollbar
+    description: >
+      An implementation of a custom CSS-styled
+      scrollbar.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Slider
+    provides: 
+      - Jx.Scrollbar
+    css: 
+      - scrollbar
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\scrollbar.js
+  slide.js: 
+    name: Jx.Slide
+    description: >
+      A class that shows and hides elements
+      using a slide effect. Does not use a
+      wrapper element or require a fixed width
+      or height.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Object
+      1: Core/Fx.Tween
+    provides: 
+      - Jx.Slide
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\slide.js
+  slider.js: 
+    name: Jx.Slider
+    description: >
+      A wrapper for mootools' slider class to
+      make it more Jx Friendly.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: More/Slider
+    provides: 
+      - Jx.Slider
+    css: 
+      - slider
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\slider.js
+  tooltip.js: 
+    name: Jx.Tooltip
+    description: >
+      These are very simple tooltips that are
+      designed to be instantiated in
+      javascript and directly attached to the
+      object that they are the tip for.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    provides: 
+      - Jx.Tooltip
+    css: 
+      - tooltip
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\tooltip.js
+  checkbox.js: 
+    name: Jx.Field.Check
+    description: Represents a checkbox input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field
+    provides: 
+      - Jx.Field.Checkbox
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\checkbox.js
+  field.js: 
+    name: Jx.Field
+    description: Base class for all inputs
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Fieldset
+      1: jxlib/Jx.Form
+    provides: 
+      - Jx.Field
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\field.js
+  fieldset.js: 
+    name: Jx.Fieldset
+    description: Used to create fieldsets in Forms
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    provides: 
+      - Jx.Fieldset
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\fieldset.js
+  file.js: 
+    name: Jx.Field.File
+    description: >
+      Represents a file input w/upload and
+      progress tracking capabilities (requires
+      APC for progress)
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Field.Text
+      1: jxlib/Jx.Button
+      2: Core/Request.JSON
+      3: jxlib/Jx.Field.Hidden
+      4: jxlib/Jx.Form
+    provides: 
+      - Jx.Field.File
+    css: 
+      - file
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\file.js
+  form.js: 
+    name: Jx.Form
+    description: Represents a HTML Form
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: More/String.QueryString
+      2: More/Form.Validator
+    provides: 
+      - Jx.Form
+    css: 
+      - form
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\form.js
+  hidden.js: 
+    name: Jx.Field.Hidden
+    description: Represents a hidden input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field
+    provides: 
+      - Jx.Field.Hidden
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\hidden.js
+  jxbutton.js: 
+    name: Jx.Field.Button
+    description: Represents a button input
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Field
+      1: jxlib/Jx.Button
+    provides: 
+      - Jx.Field.Button
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\jxbutton.js
+  jxcolor.js: 
+    name: Jx.Field.Color
+    description: >
+      Represents an input field with a
+      jx.button.color
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Text
+      1: jxlib/Jx.Button.Color
+      2: jxlib/Jx.Form
+      3: jxlib/Jx.Plugin.Field.Validator
+    provides: 
+      - Jx.Field.Color
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\jxcolor.js
+  jxcombo.js: 
+    name: Jx.Field.Combo
+    description: Represents an editable combo
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Field
+      1: jxlib/Jx.Button
+      2: jxlib/Jx.Menu
+      3: jxlib/Jx.Menu.Item
+      4: jxlib/Jx.ButtonSet
+    provides: 
+      - Jx.Field.Combo
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\jxcombo.js
+  password.js: 
+    name: Jx.Field.Password
+    description: Represents a password input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field.Text
+    provides: 
+      - Jx.Field.Password
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\password.js
+  radio.js: 
+    name: Jx.Field.Radio
+    description: Represents a radio button input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field
+    provides: 
+      - Jx.Field.Radio
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\radio.js
+  select.js: 
+    name: Jx.Field.Select
+    description: Represents a select, or drop down, input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field
+    provides: 
+      - Jx.Field.Select
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\select.js
+  text.js: 
+    name: Jx.Field.Text
+    description: Represents a text input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field
+    optional: 
+      - More/OverText
+    provides: 
+      - Jx.Field.Text
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\text.js
+  textarea.js: 
+    name: Jx.Field.Textarea
+    description: Represents a textarea input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Field
+    provides: 
+      - Jx.Field.Textarea
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\textarea.js
+  boolean.js: 
+    name: Jx.Formatter.Boolean
+    description: Formats boolean input
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Formatter
+    provides: 
+      - Jx.Formatter.Boolean
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\boolean.js
+  currency.js: 
+    name: Jx.Formatter.Currency
+    description: >
+      Formats input as currency. Currently
+      only US currency is supported
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Formatter.Number
+    provides: 
+      - Jx.Formatter.Currency
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\currency.js
+  date.js: 
+    name: Jx.Formatter.Date
+    description: >
+      Formats dates using the mootools-more
+      Date extensions
+    license: MIT-style license.
+    requires: 
+      0: More/Date.Extras
+      1: jxlib/Jx.Formatter
+    provides: 
+      - Jx.Formatter.Date
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\date.js
+  formatter.js: 
+    name: Jx.Formatter
+    description: Base formatter object
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.Formatter
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\formatter.js
+  number.js: 
+    name: Jx.Formatter.Number
+    description: >
+      Formats numbers including negative and
+      floats
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Formatter
+    provides: 
+      - Jx.Formatter.Number
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\number.js
+  phone.js: 
+    name: Jx.Formatter.Phone
+    description: >
+      Formats phone numbers in US format
+      including area code
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Formatter
+    provides: 
+      - Jx.Formatter.Phone
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\phone.js
+  uri.js: 
+    name: Jx.Formatter.URI
+    description: >
+      Formats uris using the mootools-more URI
+      extensions
+    license: MIT-style license.
+    requires: 
+      0: More/String.Extras
+      1: jxlib/Jx.Formatter
+      2: More/URI
+    provides: 
+      - Jx.Formatter.URI
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\uri.js
+  column.js: 
+    name: Jx.Column
+    description: A representation of a single grid column
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    provides: 
+      - Jx.Column
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\column.js
+  columns.js: 
+    name: Jx.Columns
+    description: >
+      A container for defining and holding
+      individual columns
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Column
+      1: jxlib/Jx.Object
+    provides: 
+      - Jx.Columns
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\columns.js
+  grid.js: 
+    name: Jx.Grid
+    description: >
+      A tabular control that has fixed
+      scrolling headers on the rows and
+      columns like a spreadsheet.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: jxlib/Jx.Styles
+      2: jxlib/Jx.Layout
+      3: jxlib/Jx.Columns
+      4: jxlib/Jx.Row
+      5: jxlib/Jx.Plugin.Grid
+      6: jxlib/Jx.Store
+      7: jxlib/Jx.List
+      8: jxlib/Jx.Selection
+    provides: 
+      - Jx.Grid
+    css: 
+      - grid
+    images: 
+      0: table_col.png
+      1: table_row.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\grid.js
+  renderer.button.js: 
+    name: Jx.Grid.Renderer.Button
+    description: >
+      "Renders one or more buttons in a single
+      column.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Grid.Renderer
+      1: jxlib/Jx.Button
+    provides: 
+      - Jx.Grid.Renderer.Button
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.button.js
+  renderer.checkbox.js: 
+    name: Jx.Grid.Renderer.Checkbox
+    description: >
+      Renders a checkbox in a column. Can be
+      connected to a store column or as a
+      standalone check column.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Grid.Renderer
+      1: jxlib/Jx.Field.Checkbox
+    provides: 
+      - Jx.Grid.Renderer.Checkbox
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.checkbox.js
+  renderer.js: 
+    name: Jx.Grid.Renderer
+    description: >
+      Base class for all renderers. Used to
+      create the contents of column.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Grid
+    provides: 
+      - Jx.Grid.Renderer
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.js
+  renderer.text.js: 
+    name: Jx.Grid.Renderer.Text
+    description: Renders data as straight text.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Grid.Renderer
+      1: jxlib/Jx.Formatter
+    provides: 
+      - Jx.Grid.Renderer.Text
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.text.js
+  row.js: 
+    name: Jx.Row
+    description: >
+      Holds information related to display of
+      rows in the grid.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.Row
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\row.js
+  layout.js: 
+    name: Jx.Layout
+    description: >
+      Jx.Layout is used to provide more
+      flexible layout options for applications
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.Layout
+    css: 
+      - layout
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Layout\layout.js
+  snap.js: 
+    name: Jx.Splitter.Snap
+    description: >
+      A helper class to create an element that
+      can snap a split panel open or closed.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Splitter
+    provides: 
+      - Jx.Splitter.Snap
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Layout\snap.js
+  splitter.js: 
+    name: Jx.Splitter
+    description: >
+      A Jx.Splitter creates two or more
+      containers within a parent container and
+      provides user control over the size of
+      the containers.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Layout
+    optional: 
+      - More/Drag
+    provides: 
+      - Jx.Splitter
+    css: 
+      - splitter
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Layout\splitter.js
+  license.js: 
+    repo: jxlib
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\license.js
+  locale.english.js: 
+    name: Locale.English.US
+    description: >
+      Default translations of text strings
+      used in JX for US english (en-US)
+    license: MIT-style license.
+    requires: 
+      - More/Lang
+    provides: 
+      - Locale.English.US
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\locales\locale.english.js
+  locale.german.js: 
+    repo: jxlib
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\locales\locale.german.js
+  locale.russian.js: 
+    name: Locale.Russian
+    description: >
+      Default translations of text strings
+      used in JX for Russia (Russia) (ru-RU)
+    license: MIT-style license.
+    requires: 
+      - More/Lang
+    provides: 
+      - Locale.Russian
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\locales\locale.russian.js
+  context.js: 
+    name: Jx.Menu.Context
+    description: >
+      A Jx.Menu that has no button but can be
+      opened at a specific browser location to
+      implement context menus (for instance).
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Menu
+    provides: 
+      - Jx.Menu.Context
+    css: 
+      - menu
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\context.js
+  menu.item.js: 
+    name: Jx.Menu.Item
+    description: A menu item is a single entry in a menu.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Menu
+    provides: 
+      - Jx.Menu.Item
+    images: 
+      - menuitem.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\menu.item.js
+  menu.js: 
+    name: Jx.Menu
+    description: >
+      A main menu as opposed to a sub menu
+      that lives inside the menu.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Button
+      1: jxlib/Jx.List
+    provides: 
+      - Jx.Menu
+    css: 
+      - menu
+    images: 
+      0: flyout_chrome.png
+      1: emblems.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\menu.js
+  menu.separator.js: 
+    name: Jx.Menu.Separator
+    description: >
+      Convenience class to create a visual
+      separator in a menu.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Menu
+    provides: 
+      - Jx.Menu.Separator
+    images: 
+      - toolbar_separator_v.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\menu.separator.js
+  submenu.js: 
+    name: Jx.Menu.SubMenu
+    description: >
+      A sub menu contains menu items within a
+      main menu or another sub menu.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Menu.Item
+      1: jxlib/Jx.Menu
+    provides: 
+      - Jx.Menu.SubMenu
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\submenu.js
+  confirm.js: 
+    name: Jx.Dialog.Confirm
+    description: >
+      A subclass of Jx.dialog for asking a
+      yes/no type question of the user.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Dialog
+      1: jxlib/Jx.Button
+      2: jxlib/Jx.Toolbar.Item
+    provides: 
+      - Jx.Dialog.Confirm
+    css: 
+      - confirm
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\confirm.js
+  dataview.js: 
+    name: Jx.Panel.DataView
+    description: >
+      A panel used for displaying records from
+      a store in a list-style interface rather
+      than a grid.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Panel
+      1: jxlib/Jx.Store
+      2: jxlib/Jx.List
+    provides: 
+      - Jx.Panel.DataView
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\dataview.js
+  dialog.js: 
+    name: Jx.Dialog
+    description: >
+      A Jx.Panel that implements a floating
+      dialog.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Panel
+    optional: 
+      - More/Drag
+    provides: 
+      - Jx.Dialog
+    css: 
+      - dialog
+    images: 
+      0: dialog_chrome.png
+      1: dialog_resize.png
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\dialog.js
+  group.js: 
+    name: Jx.Panel.DataView.Group
+    description: >
+      A subclass of Dataview that can display
+      records in groups.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Panel.DataView
+      1: jxlib/Jx.Selection
+    provides: 
+      - Jx.Panel.DataView.Group
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\group.js
+  listitem.js: 
+    name: Jx.ListItem
+    description: Represents a single item in a listview.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    provides: 
+      - Jx.ListItem
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\listitem.js
+  listview.js: 
+    name: Jx.ListView
+    description: >
+      A widget that displays items in a list
+      format.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.List
+      1: jxlib/Jx.ListItem
+    provides: 
+      - Jx.ListView
+    css: 
+      - list
+    images: 
+      - listitem.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\listview.js
+  message.js: 
+    name: Jx.Dialog.Message
+    description: >
+      A subclass of jx.Dialog for displaying
+      messages w/a single OK button.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Dialog
+      1: jxlib/Jx.Button
+      2: jxlib/Jx.Toolbar.Item
+    provides: 
+      - Jx.Dialog.Message
+    css: 
+      - message
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\message.js
+  panel.js: 
+    name: Jx.Panel
+    description: >
+      A panel is a fundamental container
+      object that has a content area and
+      optional toolbars around the content
+      area.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: jxlib/Jx.Menu.Item
+      2: jxlib/Jx.Layout
+      3: jxlib/Jx.Toolbar.Container
+      4: jxlib/Jx.Toolbar.Item
+    provides: 
+      - Jx.Panel
+    css: 
+      - panel
+    images: 
+      0: panel_controls.png
+      1: panelbar.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\panel.js
+  panelset.js: 
+    name: Jx.PanelSet
+    description: >
+      A panel set manages a set of panels
+      within a DOM element.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Splitter
+      1: jxlib/Jx.Panel
+    provides: 
+      - Jx.PanelSet
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\panelset.js
+  prompt.js: 
+    name: Jx.Dialog.Prompt
+    description: >
+      A subclass of Jx.dialog for prompting
+      the user for text input.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Dialog
+      1: jxlib/Jx.Button
+      2: jxlib/Jx.Toolbar.Item
+      3: jxlib/Jx.Field.Text
+    provides: 
+      - Jx.Dialog.Prompt
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\prompt.js
+  upload.js: 
+    name: Jx.Panel.FileUpload
+    description: >
+      A panel subclass that is designed to be
+      a multiple file upload panel with a
+      queue listing.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Panel
+      1: jxlib/Jx.ListView
+      2: jxlib/Jx.Field.File
+      3: jxlib/Jx.Progressbar
+      4: jxlib/Jx.Button
+      5: jxlib/Jx.Toolbar.Item
+      6: jxlib/Jx.Tooltip
+    provides: 
+      - Jx.Panel.FileUpload
+    css: 
+      - upload
+    images: 
+      - icons.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\upload.js
+  dataview.groupfolder.js: 
+    name: Jx.Plugin.DataView.GroupFolder
+    description: >
+      Enables closing and opening groups in a
+      group dataview
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Plugin.DataView
+      1: jxlib/Jx.Slide
+    provides: 
+      - Jx.Plugin.DataView.GroupFolder
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\dataview.groupfolder.js
+  field.validator.js: 
+    name: Jx.Plugin.Field.Validator
+    description: >
+      Provides validation services for
+      Jx.Field subclasses
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Plugin.Field
+      1: More/Form.Validator
+      2: More/Form.Validator.Extras
+    provides: 
+      - Jx.Plugin.Field.Validator
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\field.validator.js
+  form.validator.js: 
+    name: Jx.Plugin.Form.Validator
+    description: Provides validation services for Jx.Form
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Plugin.Form
+      1: jxlib/Jx.Plugin.Field.Validator
+    provides: 
+      - Jx.Plugin.Form.Validator
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\form.validator.js
+  grid.editor.js: 
+    name: Jx.Plugin.Grid.Editor
+    description: Enables inline editing in grids
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Plugin.Grid
+      1: More/Keyboard
+    provides: 
+      - Jx.Plugin.Grid.Editor
+    images: 
+      - icons.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.editor.js
+  grid.prelighter.js: 
+    name: Jx.Plugin.Grid.Prelighter
+    description: >
+      Highlights rows, columns, cells, and
+      headers in grids
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin.Grid
+    provides: 
+      - Jx.Plugin.Grid.Prelighter
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.prelighter.js
+  grid.resize.js: 
+    name: Jx.Plugin.Grid.Resize
+    description: Enables column resizing in grids
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin.Grid
+    provides: 
+      - Jx.Plugin.Grid.Resize
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.resize.js
+  grid.selector.js: 
+    name: Jx.Plugin.Grid.Selector
+    description: >
+      Allows selecting rows, columns, and
+      cells in grids
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Plugin.Grid
+      1: jxlib/Jx.Grid.Renderer.Checkbox
+    provides: 
+      - Jx.Plugin.Grid.Selector
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.selector.js
+  grid.sorter.js: 
+    name: Jx.Plugin.Grid.Sorter
+    description: Enables column sorting in grids
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin.Grid
+    provides: 
+      - Jx.Plugin.Grid.Sorter
+    images: 
+      - emblems.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.sorter.js
+  plugin.dataview.js: 
+    name: Jx.Plugin.DataView
+    description: Namespace for DataView plugins
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Plugin.DataView
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.dataview.js
+  plugin.field.js: 
+    name: Jx.Plugin.Field
+    description: Namespace for Jx.Field plugins
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Plugin.Field
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.field.js
+  plugin.form.js: 
+    name: Jx.Plugin.Form
+    description: Namespace for Jx.Form plugins
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Plugin.Form
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.form.js
+  plugin.grid.js: 
+    name: Jx.Plugin.Grid
+    description: Namespace for grid plugins
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Plugin.Grid
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.grid.js
+  plugin.js: 
+    name: Jx.Plugin
+    description: Base class for all plugins
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Object
+    provides: 
+      - Jx.Plugin
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.js
+  plugin.toolbarContainer.js: 
+    name: Jx.Plugin.ToolbarContainer
+    description: Namespace for Jx.Toolbar.Container
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Plugin.ToolbarContainer
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.toolbarContainer.js
+  toolbarContainer.tabMenu.js: 
+    name: Jx.Plugin.ToolbarContainer.TabMenu
+    description: >
+      Adds a menu of tabs to the toolbar
+      container for easy access to all tabs.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin.ToolbarContainer
+    provides: 
+      - Jx.Plugin.ToolbarContainer.TabMenu
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\toolbarContainer.tabMenu.js
+  scripts.json: 
+    repo: jxlib
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\scripts.json
+  tab.js: 
+    name: Jx.Tab
+    description: A single tab in a tab set.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Button
+      1: jxlib/Jx.Layout
+    provides: 
+      - Jx.Tab
+    css: 
+      - tab
+    images: 
+      0: tab_top.png
+      1: tab_bottom.png
+      2: tab_left.png
+      3: tab_right.png
+      4: tab_close.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tab\tab.js
+  tabbox.js: 
+    name: Jx.TabBox
+    description: >
+      A convenience class to handle the common
+      case of a single toolbar directly
+      attached to the content area of the
+      tabs.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Toolbar
+      1: jxlib/Jx.Panel
+      2: jxlib/Jx.TabSet
+    provides: 
+      - Jx.TabBox
+    images: 
+      0: tabbar.png
+      1: tabbar_bottom.png
+      2: tabbar_left.png
+      3: tabbar_right.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tab\tabbox.js
+  tabset.js: 
+    name: Jx.TabSet
+    description: >
+      A TabSet manages a set of Jx.Tab content
+      areas by ensuring that only one of the
+      content areas is visible (i.e. the
+      active tab).
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Tab
+    provides: 
+      - Jx.TabSet
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tab\tabset.js
+  container.js: 
+    name: Jx.Toolbar.Container
+    description: >
+      A toolbar container contains toolbars.
+      This has an optional dependency on
+      Fx.Tween that, if included, will allow
+      toolbars that contain more elements than
+      can be displayed to be smoothly scrolled
+      left and right.  Without this optional
+      dependency, the toolbar will jump in
+      fixed increments rather than smoothly
+      scrolling.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Toolbar
+      1: jxlib/Jx.Button
+    optional: 
+      - Core/Fx.Tween
+    provides: 
+      - Jx.Toolbar.Container
+    images: 
+      - emblems.png
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\container.js
+  toolbar.item.js: 
+    name: Jx.Toolbar.Item
+    description: >
+      A helper class to provide a container
+      for something to go into a Jx.Toolbar.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Toolbar
+    provides: 
+      - Jx.Toolbar.Item
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\toolbar.item.js
+  toolbar.js: 
+    name: Jx.Toolbar
+    description: >
+      A toolbar is a container object that
+      contains other objects such as buttons.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: jxlib/Jx.List
+    provides: 
+      - Jx.Toolbar
+    css: 
+      - toolbar
+    images: 
+      - toolbar.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\toolbar.js
+  toolbar.separator.js: 
+    name: Jx.Toolbar.Separator
+    description: >
+      A helper class that represents a visual
+      separator in a Jx.Toolbar.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Toolbar
+    provides: 
+      - Jx.Toolbar.Separator
+    images: 
+      0: toolbar_separator_h.png
+      1: toolbar_separator_v.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\toolbar.separator.js
+  tree.js: 
+    name: Jx.Tree
+    description: >
+      Jx.Tree displays hierarchical data in a
+      tree structure of folders and nodes.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: jxlib/Jx.List
+    provides: 
+      - Jx.Tree
+    css: 
+      - tree
+    images: 
+      0: tree.png
+      1: tree_vert_line.png
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tree\tree.js
+  treefolder.js: 
+    name: Jx.TreeFolder
+    description: >
+      A Jx.TreeFolder is an item in a tree
+      that can contain other items. It is
+      expandable and collapsible.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.TreeItem
+      1: jxlib/Jx.Tree
+    provides: 
+      - Jx.TreeFolder
+    repo: jxlib
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tree\treefolder.js
+  treeitem.js: 
+    name: Jx.TreeItem
+    description: An item in a tree.
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Widget
+    optional: 
+      - More/Drag
+    provides: 
+      - Jx.TreeItem
+    images: 
+      - tree_hover.png
+    repo: jxlib
+    path: >
+      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tree\treeitem.js
+loader: 
+  loader.js: 
+    name: Loader
+    description: >
+      This class is used to create managers to
+      control stores, widgets, or other
+      components
+    license: MIT-style license.
+    requires: 
+      0: Core/Browser
+      1: Core/Event
+      2: Core/Class
+      3: Core/Class.Extras
+      4: Core/Element
+      5: Core/Element.Event
+      6: Core/JSON
+      7: Core/Request
+      8: Core/Request.JSON
+      9: More/Assets
+      10: Core/DomReady
+      11: loader/Option.Page
+    provides: 
+      - Loader
+    repo: loader
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\loader\js\loader.js
+  option.page.js: 
+    name: Option.page
+    description: >
+      This class is used to create managers to
+      control stores, widgets, or other
+      components
+    license: MIT-style license.
+    requires: 
+      - Core/$util
+    provides: 
+      - option.page
+    repo: loader
+    optional: [ ]
+    path: >
+      D:\gits\JxCMS\modules\loader\media\loader\js\option.page.js

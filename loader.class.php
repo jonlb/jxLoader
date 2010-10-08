@@ -45,26 +45,35 @@ class Loader {
                 $p = $this->config['repos'][$name]['paths']['css'];
                 if (strpos($p,'{theme}')) {
                     list($p,$rest) = explode('{theme}',$p);
+                    $this->config['repos'][$name]['paths']['css'] = $this->find_path($p).DS.'{theme}'.$rest;
+                } else {
+                    $this->config['repos'][$name]['paths']['css'] = $this->find_path($this->config['repos'][$name]['paths']['css']);
                 }
-                $this->config['repos'][$name]['paths']['css'] = $this->find_path($p).DS.'{theme}'.$rest;
+
             }
 
             if (isset($this->config['repos'][$name]['paths']['cssalt'])) {
                 $p = $this->config['repos'][$name]['paths']['cssalt'];
                 if (strpos($p,'{theme}')) {
                     list($p,$rest) = explode('{theme}',$p);
+                    $this->config['repos'][$name]['paths']['cssalt'] = $this->find_path($p).DS.'{theme}'.$rest;
+                } else {
+                    $this->config['repos'][$name]['paths']['cssalt'] = $this->find_path($this->config['repos'][$name]['paths']['cssalt']);
                 }
-                $this->config['repos'][$name]['paths']['cssalt'] = $this->find_path($p).DS.'{theme}'.$rest;
             }
 
             if (isset($this->config['repos'][$name]['paths']['images'])) {
                 $p = $this->config['repos'][$name]['paths']['images'];
                 if (strpos($p,'{theme}')) {
                     list($p,$rest) = explode('{theme}',$p);
+                    $this->config['repos'][$name]['paths']['images'] = $this->find_path($p).DS.'{theme}'.$rest;
+                } else {
+                    $this->config['repos'][$name]['paths']['images'] = $this->find_path($this->config['repos'][$name]['paths']['images']);
                 }
-                $this->config['repos'][$name]['paths']['images'] = $this->find_path($p).DS.'{theme}'.$rest;
             }
         }
+
+        //Jx_Debug::dump($this->config['repos']);
         return $result;
     }
 
@@ -133,7 +142,7 @@ class Loader {
             $path = dirname(__FILE__).DS.$path;
             $check = realpath($path);
             if ($check === false) {
-                throw new Exception('Unable to locate path '.$config['paths']['js']);
+                throw new Exception('Unable to locate path '.$this->config['paths']['js']);
             } else {
                 return $check;
             }
@@ -206,12 +215,13 @@ class Loader {
                 $list = $this->includeDependencies($r, $class, $opts, $exclude, $this->flat, $list, $type);
             }
         }
+        //Jx_Debug::dump($list,'list of dependencies');
         return $list;
     }
 
     public function compile($classes, $repos, $type = 'js', $includeDeps = true, $theme = '', $exclude = array(), $opts = true) {
 
-        $deps;
+        $deps = null;
         if ($includeDeps) {
             $deps = $this->compile_deps($classes, $repos, $type, $opts, $exclude);
         } else {
@@ -236,7 +246,7 @@ class Loader {
     }
 
     private function includeDependencies($repo, $class, $opts, $exclude, &$flatArray, $list = array(), $type = 'js', &$ml = array()) {
-        $k;
+        $k = null;
         if (strpos($class,'/') === false) {
             $k = strtolower($repo).'/'.strtolower($class);
         } else {
@@ -348,14 +358,20 @@ class Loader {
                 $csspath = realpath($csspath);
                 $cssfiles = isset($this->flat[$dep]['css']) ? $this->flat[$dep]['css']:'';
 
+
+                
                 if (!empty($cssfiles)) {
+                    //Jx_Debug::dump($cssfiles, "Css files for $dep");
+                    //Jx_Debug::dump($this->config['repos'][$r]['paths']['css'], 'base css path');
+                    //Jx_Debug::dump($csspath, "Css path for $dep");
+
                     foreach ($cssfiles as $css) {
                         $fp = $csspath . '/' . $css . '.css';
                         if (file_exists($fp)) {
                             $s = file_get_contents($fp);
                             //replace for image path
 
-                            if ($this->config['rewriteImageUrl']) {
+                            if ($this->config['rewriteImageUrl'] && isset($this->config['repos'][$r]['imageUrl'])) {
                                 $s = str_ireplace($this->config['repos'][$r]['imageUrl'], $this->config['imagePath'],$s);
                             }
                             $sources[] = $s;
@@ -369,8 +385,8 @@ class Loader {
                                     $s = file_get_contents($fp);
                                     //replace for image path
 
-                                    if ($this->config['rewriteImageUrl']) {
-                                        $s = str_ireplace('images/',$this->config['repos'][$r]['imageUrl'], $s);
+                                    if ($this->config['rewriteImageUrl'] && isset($this->config['repos'][$r]['imageUrl'])) {
+                                        $s = str_ireplace($this->config['repos'][$r]['imageUrl'], $this->config['imagePath'],$s);
                                     }
                                     $sources[] = $s;
                                 }
@@ -380,25 +396,30 @@ class Loader {
                 }
 
                 if ($this->config['moveImagesRelativeToLoader']) {
-                    $imageFiles = $this->flat[$dep]['images'];
-                    if (!empty($imageFiles)) {
-                        //get images and move them
-                        $ipath = $this->config['repos'][$r]['paths']['images'];
-                        if (strpos($ipath,'{theme}') !== false) {
-                            $ipath = str_ireplace('{theme}',$theme,$ipath);
-                        }
-                        $ipath = realpath($ipath);
+                    if (isset($this->flat[$dep]['images'])) {
+                        $imageFiles = $this->flat[$dep]['images'];
+                        if (!empty($imageFiles)) {
+                            //get images and move them
+                            $ipath = $this->config['repos'][$r]['paths']['images'];
+                            if (strpos($ipath,'{theme}') !== false) {
+                                $ipath = str_ireplace('{theme}',$theme,$ipath);
+                            }
+                            $ipath = realpath($ipath);
 
-                        $destImagePath = $this->config['imagePath'];
+                            $destImagePath = dirname(__FILE__) . '/' . $this->config['imageLocation'];
 
-                        //create dest directory if it's not there
-                        if (!file_exists($destImagePath)) {
-                            mkdir($destImagePath);
-                        }
+                            //Jx_Debug::dump($destImagePath);
+                            //Jx_Debug::dump(realpath($destImagePath));
 
-                        foreach ($imageFiles as $filename) {
-                            if (!file_exists($destImagePath . '/' . $filename)) {
-                                copy($ipath . '/' . $filename, $destImagePath . '/' . $filename);
+                            //create dest directory if it's not there
+                            if (!file_exists($destImagePath)) {
+                                mkdir($destImagePath);
+                            }
+
+                            foreach ($imageFiles as $filename) {
+                                if (!file_exists($destImagePath . '/' . $filename)) {
+                                    copy($ipath . '/' . $filename, $destImagePath . '/' . $filename);
+                                }
                             }
                         }
                     }

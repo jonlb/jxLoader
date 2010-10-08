@@ -16,7 +16,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Class\Class.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Class/Class.Extras.js
   Class.js: 
     script: Class.js
     description: >
@@ -37,7 +37,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Class\Class.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Class/Class.js
   Browser.js: 
     script: Browser.js
     description: >
@@ -56,7 +56,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Core\Browser.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Core/Browser.js
   Core.js: 
     script: Core.js
     description: >
@@ -82,7 +82,7 @@ core:
     requires: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Core\Core.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Core/Core.js
   Element.Dimensions.js: 
     script: Element.Dimensions.js
     description: >
@@ -100,7 +100,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.Dimensions.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Element/Element.Dimensions.js
   Element.Event.js: 
     script: Element.Event.js
     description: >
@@ -117,7 +117,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.Event.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Element/Element.Event.js
   Element.js: 
     script: Element.js
     description: >
@@ -144,7 +144,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Element/Element.js
   Element.Style.js: 
     script: Element.Style.js
     description: >
@@ -159,7 +159,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Element\Element.Style.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Element/Element.Style.js
   Fx.CSS.js: 
     script: Fx.CSS.js
     description: >
@@ -174,7 +174,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.CSS.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Fx/Fx.CSS.js
   Fx.js: 
     script: Fx.js
     description: >
@@ -190,7 +190,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Fx/Fx.js
   Fx.Morph.js: 
     script: Fx.Morph.js
     description: >
@@ -206,7 +206,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.Morph.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Fx/Fx.Morph.js
   Fx.Transitions.js: 
     script: Fx.Transitions.js
     description: >
@@ -222,7 +222,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.Transitions.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Fx/Fx.Transitions.js
   Fx.Tween.js: 
     script: Fx.Tween.js
     description: >
@@ -238,21 +238,21 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Fx\Fx.Tween.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Fx/Fx.Tween.js
   license.js: 
     repo: core
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\license.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/license.js
   license.txt: 
     repo: core
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\license.txt
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/license.txt
   Array.js: 
     script: Array.js
     description: >
@@ -267,7 +267,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Array.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Native/Array.js
   Event.js: 
     script: Event.js
     description: >
@@ -286,7 +286,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Event.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Native/Event.js
   Function.js: 
     script: Function.js
     description: >
@@ -301,7 +301,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Function.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Native/Function.js
   Hash.js: 
     script: Hash.js
     description: >
@@ -317,7 +317,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Hash.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Native/Hash.js
   Number.js: 
     script: Number.js
     description: >
@@ -332,7 +332,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Native\Number.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Native/Number.js
   String.js: 
     script: String.js
     description: >
@@ -346,7 +346,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Native\String.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Native/String.js
   Request.HTML.js: 
     script: Request.HTML.js
     description: >
@@ -362,7 +362,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Request\Request.HTML.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Request/Request.HTML.js
   Request.js: 
     script: Request.js
     description: >
@@ -380,7 +380,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Request\Request.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Request/Request.js
   Request.JSON.js: 
     script: Request.JSON.js
     description: >
@@ -396,14 +396,14 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Request\Request.JSON.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Request/Request.JSON.js
   scripts.json: 
     repo: core
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\scripts.json
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/scripts.json
   Cookie.js: 
     script: Cookie.js
     description: >
@@ -421,7 +421,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\Cookie.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Utilities/Cookie.js
   DomReady.js: 
     script: DomReady.js
     description: Contains the custom event domready.
@@ -433,7 +433,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\DomReady.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Utilities/DomReady.js
   JSON.js: 
     script: JSON.js
     description: JSON encoder and decoder.
@@ -450,7 +450,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\JSON.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Utilities/JSON.js
   Selectors.js: 
     script: Selectors.js
     description: >
@@ -465,7 +465,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\Selectors.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Utilities/Selectors.js
   Swiff.js: 
     script: Swiff.js
     description: >
@@ -486,7 +486,7 @@ core:
     repo: core
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\core\Source\Utilities\Swiff.js
+      /media/Storage/gits/JxCMS/modules/loader/media/core/Source/Utilities/Swiff.js
 more: 
   Chain.Wait.js: 
     script: Chain.Wait.js
@@ -506,7 +506,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Chain.Wait.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Class/Chain.Wait.js
   Class.Binds.js: 
     script: Class.Binds.js
     description: >
@@ -523,7 +523,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Class.Binds.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Class/Class.Binds.js
   Class.Occlude.js: 
     script: Class.Occlude.js
     description: >
@@ -541,7 +541,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Class.Occlude.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Class/Class.Occlude.js
   Class.Refactor.js: 
     script: Class.Refactor.js
     description: >
@@ -559,7 +559,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Class\Class.Refactor.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Class/Class.Refactor.js
   Depender.js: 
     script: Depender.js
     description: >
@@ -578,7 +578,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Core\Depender.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Core/Depender.js
   Lang.js: 
     script: MooTools.Lang.js
     description: Provides methods for localization.
@@ -593,7 +593,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Core\Lang.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Core/Lang.js
   Log.js: 
     script: Log.js
     description: >
@@ -612,7 +612,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Core\Log.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Core/Log.js
   More.js: 
     script: More.js
     description: MooTools More
@@ -628,7 +628,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Core\More.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Core/More.js
   Drag.js: 
     script: Drag.js
     description: >
@@ -650,7 +650,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Drag.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Drag/Drag.js
   Drag.Move.js: 
     script: Drag.Move.js
     description: >
@@ -672,7 +672,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Drag.Move.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Drag/Drag.Move.js
   Slider.js: 
     script: Slider.js
     description: >
@@ -692,7 +692,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Slider.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Drag/Slider.js
   Sortables.js: 
     script: Sortables.js
     description: >
@@ -708,7 +708,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Drag\Sortables.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Drag/Sortables.js
   Element.Delegation.js: 
     script: Element.Delegation.js
     description: >
@@ -730,7 +730,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Delegation.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Element.Delegation.js
   Element.Forms.js: 
     script: Element.Forms.js
     description: >
@@ -748,7 +748,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Forms.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Element.Forms.js
   Element.Measure.js: 
     script: Element.Measure.js
     description: >
@@ -768,7 +768,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Measure.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Element.Measure.js
   Element.Pin.js: 
     script: Element.Pin.js
     description: >
@@ -788,7 +788,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Pin.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Element.Pin.js
   Element.Position.js: 
     script: Element.Position.js
     description: >
@@ -806,7 +806,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Position.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Element.Position.js
   Element.Shortcuts.js: 
     script: Element.Shortcuts.js
     description: >
@@ -823,7 +823,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Element.Shortcuts.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Element.Shortcuts.js
   Elements.From.js: 
     script: Elements.From.js
     description: >
@@ -840,7 +840,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Element\Elements.From.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Element/Elements.From.js
   Form.Request.Append.js: 
     script: Form.Request.Append.js
     description: >
@@ -861,7 +861,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Request.Append.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Forms/Form.Request.Append.js
   Form.Request.js: 
     script: Form.Request.js
     description: >
@@ -883,7 +883,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Request.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Forms/Form.Request.js
   Form.Validator.Extras.js: 
     script: Form.Validator.Extras.js
     description: >
@@ -899,7 +899,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Validator.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Forms/Form.Validator.Extras.js
   Form.Validator.Inline.js: 
     script: Form.Validator.Inline.js
     description: >
@@ -915,7 +915,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Validator.Inline.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Forms/Form.Validator.Inline.js
   Form.Validator.js: 
     script: Form.Validator.js
     description: >
@@ -943,7 +943,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\Form.Validator.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Forms/Form.Validator.js
   OverText.js: 
     script: OverText.js
     description: >
@@ -966,7 +966,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Forms\OverText.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Forms/OverText.js
   Fx.Accordion.js: 
     script: Fx.Accordion.js
     description: >
@@ -984,7 +984,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Accordion.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Accordion.js
   Fx.Elements.js: 
     script: Fx.Elements.js
     description: >
@@ -1001,7 +1001,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Elements.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Elements.js
   Fx.Move.js: 
     script: Fx.Move.js
     description: >
@@ -1019,7 +1019,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Move.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Move.js
   Fx.Reveal.js: 
     script: Fx.Reveal.js
     description: >
@@ -1037,7 +1037,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Reveal.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Reveal.js
   Fx.Scroll.js: 
     script: Fx.Scroll.js
     description: >
@@ -1056,7 +1056,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Scroll.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Scroll.js
   Fx.Slide.js: 
     script: Fx.Slide.js
     description: >
@@ -1073,7 +1073,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Slide.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Slide.js
   Fx.SmoothScroll.js: 
     script: Fx.SmoothScroll.js
     description: >
@@ -1091,7 +1091,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.SmoothScroll.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.SmoothScroll.js
   Fx.Sort.js: 
     script: Fx.Sort.js
     description: >
@@ -1109,7 +1109,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Fx\Fx.Sort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Fx/Fx.Sort.js
   HtmlTable.js: 
     script: HtmlTable.js
     description: >
@@ -1127,7 +1127,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/HtmlTable.js
   HtmlTable.Select.js: 
     script: HtmlTable.Select.js
     description: >
@@ -1149,7 +1149,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.Select.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/HtmlTable.Select.js
   HtmlTable.Sort.js: 
     script: HtmlTable.Sort.js
     description: >
@@ -1170,7 +1170,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.Sort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/HtmlTable.Sort.js
   HtmlTable.Zebra.js: 
     script: HtmlTable.Zebra.js
     description: >
@@ -1188,7 +1188,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\HtmlTable.Zebra.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/HtmlTable.Zebra.js
   Keyboard.Extras.js: 
     script: Keyboard.js
     description: >
@@ -1208,7 +1208,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Keyboard.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/Keyboard.Extras.js
   Keyboard.js: 
     script: Keyboard.js
     description: >
@@ -1232,7 +1232,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Keyboard.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/Keyboard.js
   Mask.js: 
     script: Mask.js
     description: Creates a mask element to cover another.
@@ -1251,7 +1251,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Mask.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/Mask.js
   Scroller.js: 
     script: Scroller.js
     description: >
@@ -1271,7 +1271,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Scroller.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/Scroller.js
   Spinner.js: 
     script: Spinner.js
     description: >
@@ -1289,7 +1289,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Spinner.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/Spinner.js
   Tips.js: 
     script: Tips.js
     description: >
@@ -1312,21 +1312,28 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Interface\Tips.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Interface/Tips.js
   license.js: 
     repo: more
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\license.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/license.js
   license.txt: 
     repo: more
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\license.txt
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/license.txt
+  Date.Russian.js: 
+    repo: more
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Russian.js
   Date.Catalan.js: 
     script: Date.Catalan.js
     description: Date messages for Catalan.
@@ -1341,7 +1348,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Catalan.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Catalan.js
   Date.Czech.js: 
     script: Date.Czech.js
     description: Date messages for Czech.
@@ -1356,7 +1363,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Czech.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Czech.js
   Date.Danish.js: 
     script: Date.Danish.js
     description: Date messages for Danish.
@@ -1372,7 +1379,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Danish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Danish.js
   Date.Dutch.js: 
     script: Date.Dutch.js
     description: Date messages in Dutch.
@@ -1387,7 +1394,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Dutch.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Dutch.js
   Date.English.GB.js: 
     script: Date.English.GB.js
     description: Date messages for British English.
@@ -1402,7 +1409,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.English.GB.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.English.GB.js
   Date.English.US.js: 
     script: Date.English.US.js
     description: Date messages for US English.
@@ -1417,7 +1424,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.English.US.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.English.US.js
   Date.Estonian.js: 
     script: Date.Estonian.js
     description: Date messages for Estonian.
@@ -1432,7 +1439,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Estonian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Estonian.js
   Date.French.js: 
     script: Date.French.js
     description: Date messages in French.
@@ -1448,7 +1455,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.French.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.French.js
   Date.German.CH.js: 
     script: Date.German.CH.js
     description: Date messages for German (Switzerland).
@@ -1463,7 +1470,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.German.CH.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.German.CH.js
   Date.German.js: 
     script: Date.German.js
     description: Date messages for German.
@@ -1481,7 +1488,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.German.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.German.js
   Date.Italian.js: 
     script: Date.Italian.js
     description: Date messages for Italian.
@@ -1497,14 +1504,14 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Italian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Italian.js
   Date.Japanese.js: 
     repo: more
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Japanese.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Japanese.js
   Date.Norwegian.js: 
     script: Date.Norwegian.js
     description: Date messages in Norwegian.
@@ -1519,7 +1526,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Norwegian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Norwegian.js
   Date.Persian.js: 
     script: Date.Persian.js
     description: Date messages for Persian.
@@ -1534,7 +1541,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Persian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Persian.js
   Date.Polish.js: 
     script: Date.Polish.js
     description: Date messages for Polish.
@@ -1549,7 +1556,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Polish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Polish.js
   Date.Portuguese.BR.js: 
     script: Date.Portuguese.BR.js
     description: Date messages in Portuguese-BR (Brazil).
@@ -1564,14 +1571,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Portuguese.BR.js
-  Date.Russian.js: 
-    repo: more
-    requires: [ ]
-    provides: [ ]
-    optional: [ ]
-    path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Russian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Portuguese.BR.js
   Date.Spanish.AR.js: 
     script: Date.Spanish.AR.js
     description: >
@@ -1588,7 +1588,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Spanish.AR.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Spanish.AR.js
   Date.Spanish.js: 
     script: Date.Spanish.US.js
     description: Date messages for Spanish.
@@ -1603,7 +1603,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Spanish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Spanish.js
   Date.Swedish.js: 
     script: Date.Swedish.js
     description: Date messages for Swedish (SE).
@@ -1618,7 +1618,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Swedish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Swedish.js
   Date.Ukrainian.js: 
     script: Date.Ukrainian.js
     description: Date messages for Ukrainian.
@@ -1633,7 +1633,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Date.Ukrainian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Date.Ukrainian.js
   Form.Validator.Arabic.js: 
     script: Form.Validator.Arabic.js
     description: Form.Validator messages in Arabic.
@@ -1648,7 +1648,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Arabic.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Arabic.js
   Form.Validator.Catalan.js: 
     script: Form.Validator.Catalan.js
     description: Date messages for Catalan.
@@ -1664,7 +1664,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Catalan.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Catalan.js
   Form.Validator.Chinese.js: 
     script: Form.Validator.Chinese.js
     description: >
@@ -1681,7 +1681,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Chinese.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Chinese.js
   Form.Validator.Czech.js: 
     script: Form.Validator.Czech.js
     description: Form Validator messages for Czech.
@@ -1696,7 +1696,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Czech.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Czech.js
   Form.Validator.Danish.js: 
     script: Form.Validator.Danish.js
     description: Form.Validator messages for Danish.
@@ -1711,7 +1711,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Danish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Danish.js
   Form.Validator.Dutch.js: 
     script: Form.Validator.Dutch.js
     description: Form.Validator messages in Dutch.
@@ -1726,7 +1726,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Dutch.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Dutch.js
   Form.Validator.English.js: 
     script: Form.Validator.English.js
     description: Form Validator messages for English.
@@ -1741,7 +1741,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.English.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.English.js
   Form.Validator.Estonian.js: 
     script: Form.Validator.Estonian.js
     description: Date messages for Estonian.
@@ -1756,7 +1756,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Estonian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Estonian.js
   Form.Validator.French.js: 
     script: Form.Validator.French.js
     description: Form.Validator messages in French.
@@ -1772,7 +1772,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.French.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.French.js
   Form.Validator.German.CH.js: 
     script: Form.Validator.German.CH.js
     description: Date messages for German (Switzerland).
@@ -1787,7 +1787,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.German.CH.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.German.CH.js
   Form.Validator.German.js: 
     script: Form.Validator.German.js
     description: Date messages for German.
@@ -1804,7 +1804,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.German.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.German.js
   Form.Validator.Italian.js: 
     script: Form.Validator.Italian.js
     description: Form.Validator messages in Italian.
@@ -1820,14 +1820,14 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Italian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Italian.js
   Form.Validator.Japanese.js: 
     repo: more
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Japanese.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Japanese.js
   Form.Validator.Norwegian.js: 
     script: Form.Validator.Norwegian.js
     description: Form.Validator messages in Norwegian.
@@ -1842,7 +1842,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Norwegian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Norwegian.js
   Form.Validator.Persian.js: 
     script: Form.Validator.Persian.js
     description: Date messages for Persian.
@@ -1857,7 +1857,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Persian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Persian.js
   Form.Validator.Polish.js: 
     script: Form.Validator.Polish.js
     description: Date messages for Polish.
@@ -1872,7 +1872,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Polish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Polish.js
   Form.Validator.Portuguese.BR.js: 
     script: Form.Validator.Portuguese.BR.js
     description: >
@@ -1889,7 +1889,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Portuguese.BR.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Portuguese.BR.js
   Form.Validator.Portuguese.js: 
     script: Form.Validator.Portuguese.js
     description: Form.Validator messages in Portuguese.
@@ -1904,7 +1904,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Portuguese.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Portuguese.js
   Form.Validator.Russian.js: 
     script: Form.Validator.Russian.js
     description: >
@@ -1921,7 +1921,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Russian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Russian.js
   Form.Validator.Spanish.AR.js: 
     script: Form.Validator.Spanish.AR.js
     description: Date messages for Spanish (Argentina).
@@ -1936,7 +1936,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Spanish.AR.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Spanish.AR.js
   Form.Validator.Spanish.js: 
     script: Form.Validator.Spanish.js
     description: Date messages for Spanish.
@@ -1951,7 +1951,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Spanish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Spanish.js
   Form.Validator.Swedish.js: 
     script: Form.Validator.Swedish.js
     description: Date messages for Swedish.
@@ -1966,7 +1966,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Swedish.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Swedish.js
   Form.Validator.Ukrainian.js: 
     script: Form.Validator.Ukrainian.js
     description: >
@@ -1983,14 +1983,14 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\Form.Validator.Ukrainian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/Form.Validator.Ukrainian.js
   FormValidator.English.js: 
     repo: more
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Localization\FormValidator.English.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Localization/FormValidator.English.js
   Array.Extras.js: 
     script: Array.Extras.js
     description: >
@@ -2007,7 +2007,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Array.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/Array.Extras.js
   Date.Extras.js: 
     script: Date.Extras.js
     description: >
@@ -2025,7 +2025,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Date.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/Date.Extras.js
   Date.js: 
     script: Date.js
     description: >
@@ -2050,7 +2050,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Date.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/Date.js
   Hash.Extras.js: 
     script: Hash.Extras.js
     description: >
@@ -2068,7 +2068,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\Hash.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/Hash.Extras.js
   String.Extras.js: 
     script: String.Extras.js
     description: >
@@ -2089,7 +2089,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\String.Extras.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/String.Extras.js
   String.QueryString.js: 
     script: String.QueryString.js
     description: >
@@ -2109,7 +2109,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\String.QueryString.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/String.QueryString.js
   URI.js: 
     script: URI.js
     description: >
@@ -2127,7 +2127,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\URI.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/URI.js
   URI.Relative.js: 
     script: URI.Relative.js
     description: >
@@ -2144,7 +2144,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Native\URI.Relative.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Native/URI.Relative.js
   Request.JSONP.js: 
     script: Request.JSONP.js
     description: >
@@ -2163,7 +2163,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Request\Request.JSONP.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Request/Request.JSONP.js
   Request.Periodical.js: 
     script: Request.Periodical.js
     description: >
@@ -2181,7 +2181,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Request\Request.Periodical.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Request/Request.Periodical.js
   Request.Queue.js: 
     script: Request.Queue.js
     description: >
@@ -2200,14 +2200,14 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Request\Request.Queue.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Request/Request.Queue.js
   scripts.json: 
     repo: more
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\scripts.json
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/scripts.json
   Assets.js: 
     script: Assets.js
     description: >
@@ -2225,7 +2225,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Assets.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Utilities/Assets.js
   Color.js: 
     script: Color.js
     description: 'Class for creating and manipulating colors in JavaScript. Supports HSB -> RGB Conversions and vice versa.'
@@ -2244,7 +2244,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Color.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Utilities/Color.js
   Group.js: 
     script: Group.js
     description: >
@@ -2261,7 +2261,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Group.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Utilities/Group.js
   Hash.Cookie.js: 
     script: Hash.Cookie.js
     description: >
@@ -2280,7 +2280,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\Hash.Cookie.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Utilities/Hash.Cookie.js
   IframeShim.js: 
     script: IframeShim.js
     description: >
@@ -2301,7 +2301,7 @@ more:
     repo: more
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\more\Source\Utilities\IframeShim.js
+      /media/Storage/gits/JxCMS/modules/loader/media/more/Source/Utilities/IframeShim.js
 jxlib: 
   adaptor.combo.js: 
     name: Jx.Adaptor.Combo
@@ -2314,7 +2314,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\adaptor.combo.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Adaptors/adaptor.combo.js
   adaptor.js: 
     name: Jx.Adaptor
     description: Base class for all Adaptors.
@@ -2326,7 +2326,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\adaptor.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Adaptors/adaptor.js
   adaptor.tree.js: 
     name: Jx.Adaptor.Tree
     description: >
@@ -2341,7 +2341,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\adaptor.tree.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Adaptors/adaptor.tree.js
   combo.fill.js: 
     name: Jx.Adaptor.Combo.Fill
     description: >
@@ -2355,7 +2355,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\combo.fill.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Adaptors/combo.fill.js
   tree.mptt.js: 
     name: Jx.Adaptor.Tree.Mptt
     description: >
@@ -2370,7 +2370,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\tree.mptt.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Adaptors/tree.mptt.js
   tree.parent.js: 
     name: Jx.Adaptor.Tree.Parent
     description: >
@@ -2384,7 +2384,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Adaptors\tree.parent.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Adaptors/tree.parent.js
   common.js: 
     name: Common
     description: >
@@ -2418,7 +2418,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\common.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/common.js
   list.js: 
     name: Jx.List
     description: >
@@ -2433,7 +2433,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\list.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/list.js
   object.js: 
     name: Jx.Object
     description: >
@@ -2447,7 +2447,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\object.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/object.js
   selection.js: 
     name: Jx.Selection
     description: >
@@ -2461,7 +2461,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\selection.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/selection.js
   stack.js: 
     name: Jx.Stack
     description: >
@@ -2477,7 +2477,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\stack.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/stack.js
   styles.js: 
     name: Jx.Styles
     description: >
@@ -2492,7 +2492,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\styles.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/styles.js
   widget.js: 
     name: Jx.Widget
     description: >
@@ -2514,7 +2514,7 @@ jxlib:
       - More/Spinner
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Base\widget.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Base/widget.js
   button.js: 
     name: Jx.Button
     description: >
@@ -2533,7 +2533,7 @@ jxlib:
       - button.png
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\button.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Button/button.js
   color.js: 
     name: Jx.Button.Color
     description: 
@@ -2546,7 +2546,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\color.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Button/color.js
   flyout.js: 
     name: Jx.Button.Flyout
     description: >
@@ -2563,7 +2563,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\flyout.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Button/flyout.js
   multi.js: 
     name: Jx.Button.Multi
     description: >
@@ -2584,7 +2584,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\multi.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Button/multi.js
   set.js: 
     name: Jx.ButtonSet
     description: >
@@ -2599,7 +2599,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Button\set.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Button/set.js
   compare.js: 
     name: Jx.Compare
     description: >
@@ -2615,7 +2615,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\compare.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/compare.js
   heapsort.js: 
     name: Jx.Sort.Heapsort
     description: >
@@ -2629,7 +2629,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\heapsort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/heapsort.js
   mergesort.js: 
     name: Jx.Sort.Mergesort
     description: >
@@ -2643,7 +2643,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\mergesort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/mergesort.js
   nativesort.js: 
     name: Jx.Sort.Nativesort
     description: >
@@ -2658,7 +2658,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\nativesort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/nativesort.js
   parser.js: 
     name: Jx.Store.Parser
     description: >
@@ -2673,7 +2673,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\parser.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/parser.js
   parser.json.js: 
     name: Jx.Store.Parser.JSON
     description: >
@@ -2688,7 +2688,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\parser.json.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/parser.json.js
   protocol.ajax.js: 
     name: Jx.Store.Protocol.Ajax
     description: >
@@ -2702,7 +2702,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\protocol.ajax.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/protocol.ajax.js
   protocol.js: 
     name: Jx.Store.Protocol
     description: Base class for all store protocols.
@@ -2714,7 +2714,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\protocol.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/protocol.js
   protocol.local.js: 
     name: Jx.Store.Protocol.Local
     description: >
@@ -2728,7 +2728,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\protocol.local.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/protocol.local.js
   quicksort.js: 
     name: Jx.Sort.Quicksort
     description: >
@@ -2742,7 +2742,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\quicksort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/quicksort.js
   record.js: 
     name: Jx.Record
     description: >
@@ -2757,7 +2757,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\record.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/record.js
   response.js: 
     name: Jx.Store.Response
     description: >
@@ -2771,7 +2771,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\response.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/response.js
   sort.js: 
     name: Jx.Sort
     description: >
@@ -2786,7 +2786,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\sort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/sort.js
   store.js: 
     name: Jx.Store
     description: An implementation of a basic data store.
@@ -2799,7 +2799,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\store.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/store.js
   strategy.full.js: 
     name: Jx.Store.Strategy.Full
     description: >
@@ -2813,7 +2813,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.full.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/strategy.full.js
   strategy.js: 
     name: Jx.Store.Strategy
     description: Base class for all store strategies.
@@ -2825,7 +2825,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/strategy.js
   strategy.paginate.js: 
     name: Jx.Store.Strategy.Paginate
     description: >
@@ -2841,7 +2841,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.paginate.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/strategy.paginate.js
   strategy.progressive.js: 
     name: Jx.Store.Strategy.Progressive
     description: >
@@ -2857,7 +2857,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.progressive.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/strategy.progressive.js
   strategy.save.js: 
     name: Jx.Store.Strategy.Save
     description: >
@@ -2872,7 +2872,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.save.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/strategy.save.js
   strategy.sort.js: 
     name: Jx.Store.Strategy.Sort
     description: >
@@ -2888,7 +2888,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Data\strategy.sort.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Data/strategy.sort.js
   colorpalette.js: 
     name: Jx.ColorPalette
     description: >
@@ -2909,7 +2909,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\colorpalette.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/colorpalette.js
   notice.js: 
     name: Jx.Notice
     description: >
@@ -2929,7 +2929,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\notice.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/notice.js
   notifier.float.js: 
     name: Jx.Notifier.Float
     description: >
@@ -2943,7 +2943,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\notifier.float.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/notifier.float.js
   notifier.js: 
     name: Jx.Notifier
     description: >
@@ -2961,7 +2961,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\notifier.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/notifier.js
   progressbar.js: 
     name: Jx.Progressbar
     description: A css-based progress bar.
@@ -2978,7 +2978,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\progressbar.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/progressbar.js
   scrollbar.js: 
     name: Jx.Scrollbar
     description: >
@@ -2994,7 +2994,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\scrollbar.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/scrollbar.js
   slide.js: 
     name: Jx.Slide
     description: >
@@ -3011,7 +3011,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\slide.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/slide.js
   slider.js: 
     name: Jx.Slider
     description: >
@@ -3028,7 +3028,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\slider.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/slider.js
   tooltip.js: 
     name: Jx.Tooltip
     description: >
@@ -3046,7 +3046,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Extras\tooltip.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Extras/tooltip.js
   checkbox.js: 
     name: Jx.Field.Check
     description: Represents a checkbox input
@@ -3058,7 +3058,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\checkbox.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/checkbox.js
   field.js: 
     name: Jx.Field
     description: Base class for all inputs
@@ -3071,7 +3071,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\field.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/field.js
   fieldset.js: 
     name: Jx.Fieldset
     description: Used to create fieldsets in Forms
@@ -3083,7 +3083,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\fieldset.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/fieldset.js
   file.js: 
     name: Jx.Field.File
     description: >
@@ -3104,7 +3104,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\file.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/file.js
   form.js: 
     name: Jx.Form
     description: Represents a HTML Form
@@ -3120,7 +3120,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\form.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/form.js
   hidden.js: 
     name: Jx.Field.Hidden
     description: Represents a hidden input
@@ -3132,7 +3132,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\hidden.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/hidden.js
   jxbutton.js: 
     name: Jx.Field.Button
     description: Represents a button input
@@ -3145,7 +3145,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\jxbutton.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/jxbutton.js
   jxcolor.js: 
     name: Jx.Field.Color
     description: >
@@ -3162,7 +3162,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\jxcolor.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/jxcolor.js
   jxcombo.js: 
     name: Jx.Field.Combo
     description: Represents an editable combo
@@ -3178,7 +3178,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\jxcombo.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/jxcombo.js
   password.js: 
     name: Jx.Field.Password
     description: Represents a password input
@@ -3190,7 +3190,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\password.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/password.js
   radio.js: 
     name: Jx.Field.Radio
     description: Represents a radio button input
@@ -3202,7 +3202,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\radio.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/radio.js
   select.js: 
     name: Jx.Field.Select
     description: Represents a select, or drop down, input
@@ -3214,7 +3214,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\select.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/select.js
   text.js: 
     name: Jx.Field.Text
     description: Represents a text input
@@ -3227,7 +3227,7 @@ jxlib:
       - Jx.Field.Text
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\text.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/text.js
   textarea.js: 
     name: Jx.Field.Textarea
     description: Represents a textarea input
@@ -3239,7 +3239,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Form\textarea.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Form/textarea.js
   boolean.js: 
     name: Jx.Formatter.Boolean
     description: Formats boolean input
@@ -3251,7 +3251,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\boolean.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/boolean.js
   currency.js: 
     name: Jx.Formatter.Currency
     description: >
@@ -3265,7 +3265,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\currency.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/currency.js
   date.js: 
     name: Jx.Formatter.Date
     description: >
@@ -3280,7 +3280,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\date.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/date.js
   formatter.js: 
     name: Jx.Formatter
     description: Base formatter object
@@ -3292,7 +3292,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\formatter.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/formatter.js
   number.js: 
     name: Jx.Formatter.Number
     description: >
@@ -3306,7 +3306,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\number.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/number.js
   phone.js: 
     name: Jx.Formatter.Phone
     description: >
@@ -3320,7 +3320,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\phone.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/phone.js
   uri.js: 
     name: Jx.Formatter.URI
     description: >
@@ -3336,7 +3336,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Formatter\uri.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Formatter/uri.js
   column.js: 
     name: Jx.Column
     description: A representation of a single grid column
@@ -3348,7 +3348,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\column.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/column.js
   columns.js: 
     name: Jx.Columns
     description: >
@@ -3363,7 +3363,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\columns.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/columns.js
   grid.js: 
     name: Jx.Grid
     description: >
@@ -3391,7 +3391,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\grid.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/grid.js
   renderer.button.js: 
     name: Jx.Grid.Renderer.Button
     description: >
@@ -3406,7 +3406,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.button.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/renderer.button.js
   renderer.checkbox.js: 
     name: Jx.Grid.Renderer.Checkbox
     description: >
@@ -3422,7 +3422,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.checkbox.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/renderer.checkbox.js
   renderer.js: 
     name: Jx.Grid.Renderer
     description: >
@@ -3436,7 +3436,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/renderer.js
   renderer.text.js: 
     name: Jx.Grid.Renderer.Text
     description: Renders data as straight text.
@@ -3449,7 +3449,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\renderer.text.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/renderer.text.js
   row.js: 
     name: Jx.Row
     description: >
@@ -3463,7 +3463,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Grid\row.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Grid/row.js
   layout.js: 
     name: Jx.Layout
     description: >
@@ -3479,7 +3479,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Layout\layout.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Layout/layout.js
   snap.js: 
     name: Jx.Splitter.Snap
     description: >
@@ -3493,7 +3493,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Layout\snap.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Layout/snap.js
   splitter.js: 
     name: Jx.Splitter
     description: >
@@ -3512,14 +3512,14 @@ jxlib:
       - splitter
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Layout\splitter.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Layout/splitter.js
   license.js: 
     repo: jxlib
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\license.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/license.js
   locale.english.js: 
     name: Locale.English.US
     description: >
@@ -3533,14 +3533,14 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\locales\locale.english.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/locales/locale.english.js
   locale.german.js: 
     repo: jxlib
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\locales\locale.german.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/locales/locale.german.js
   locale.russian.js: 
     name: Locale.Russian
     description: >
@@ -3554,7 +3554,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\locales\locale.russian.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/locales/locale.russian.js
   context.js: 
     name: Jx.Menu.Context
     description: >
@@ -3571,7 +3571,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\context.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Menu/context.js
   menu.item.js: 
     name: Jx.Menu.Item
     description: A menu item is a single entry in a menu.
@@ -3585,7 +3585,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\menu.item.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Menu/menu.item.js
   menu.js: 
     name: Jx.Menu
     description: >
@@ -3605,7 +3605,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\menu.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Menu/menu.js
   menu.separator.js: 
     name: Jx.Menu.Separator
     description: >
@@ -3621,7 +3621,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\menu.separator.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Menu/menu.separator.js
   submenu.js: 
     name: Jx.Menu.SubMenu
     description: >
@@ -3636,7 +3636,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Menu\submenu.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Menu/submenu.js
   confirm.js: 
     name: Jx.Dialog.Confirm
     description: >
@@ -3654,7 +3654,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\confirm.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/confirm.js
   dataview.js: 
     name: Jx.Panel.DataView
     description: >
@@ -3671,7 +3671,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\dataview.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/dataview.js
   dialog.js: 
     name: Jx.Dialog
     description: >
@@ -3691,7 +3691,7 @@ jxlib:
       1: dialog_resize.png
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\dialog.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/dialog.js
   group.js: 
     name: Jx.Panel.DataView.Group
     description: >
@@ -3706,7 +3706,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\group.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/group.js
   listitem.js: 
     name: Jx.ListItem
     description: Represents a single item in a listview.
@@ -3718,7 +3718,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\listitem.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/listitem.js
   listview.js: 
     name: Jx.ListView
     description: >
@@ -3737,7 +3737,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\listview.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/listview.js
   message.js: 
     name: Jx.Dialog.Message
     description: >
@@ -3755,7 +3755,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\message.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/message.js
   panel.js: 
     name: Jx.Panel
     description: >
@@ -3780,7 +3780,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\panel.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/panel.js
   panelset.js: 
     name: Jx.PanelSet
     description: >
@@ -3795,7 +3795,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\panelset.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/panelset.js
   prompt.js: 
     name: Jx.Dialog.Prompt
     description: >
@@ -3812,7 +3812,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\prompt.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/prompt.js
   upload.js: 
     name: Jx.Panel.FileUpload
     description: >
@@ -3837,7 +3837,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Panel\upload.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Panel/upload.js
   dataview.groupfolder.js: 
     name: Jx.Plugin.DataView.GroupFolder
     description: >
@@ -3852,7 +3852,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\dataview.groupfolder.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/dataview.groupfolder.js
   field.validator.js: 
     name: Jx.Plugin.Field.Validator
     description: >
@@ -3868,7 +3868,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\field.validator.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/field.validator.js
   form.validator.js: 
     name: Jx.Plugin.Form.Validator
     description: Provides validation services for Jx.Form
@@ -3881,7 +3881,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\form.validator.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/form.validator.js
   grid.editor.js: 
     name: Jx.Plugin.Grid.Editor
     description: Enables inline editing in grids
@@ -3896,7 +3896,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.editor.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/grid.editor.js
   grid.prelighter.js: 
     name: Jx.Plugin.Grid.Prelighter
     description: >
@@ -3910,7 +3910,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.prelighter.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/grid.prelighter.js
   grid.resize.js: 
     name: Jx.Plugin.Grid.Resize
     description: Enables column resizing in grids
@@ -3922,7 +3922,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.resize.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/grid.resize.js
   grid.selector.js: 
     name: Jx.Plugin.Grid.Selector
     description: >
@@ -3937,7 +3937,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.selector.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/grid.selector.js
   grid.sorter.js: 
     name: Jx.Plugin.Grid.Sorter
     description: Enables column sorting in grids
@@ -3951,7 +3951,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\grid.sorter.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/grid.sorter.js
   plugin.dataview.js: 
     name: Jx.Plugin.DataView
     description: Namespace for DataView plugins
@@ -3963,7 +3963,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.dataview.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/plugin.dataview.js
   plugin.field.js: 
     name: Jx.Plugin.Field
     description: Namespace for Jx.Field plugins
@@ -3975,7 +3975,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.field.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/plugin.field.js
   plugin.form.js: 
     name: Jx.Plugin.Form
     description: Namespace for Jx.Form plugins
@@ -3987,7 +3987,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.form.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/plugin.form.js
   plugin.grid.js: 
     name: Jx.Plugin.Grid
     description: Namespace for grid plugins
@@ -3999,7 +3999,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.grid.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/plugin.grid.js
   plugin.js: 
     name: Jx.Plugin
     description: Base class for all plugins
@@ -4011,7 +4011,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/plugin.js
   plugin.toolbarContainer.js: 
     name: Jx.Plugin.ToolbarContainer
     description: Namespace for Jx.Toolbar.Container
@@ -4023,7 +4023,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\plugin.toolbarContainer.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/plugin.toolbarContainer.js
   toolbarContainer.tabMenu.js: 
     name: Jx.Plugin.ToolbarContainer.TabMenu
     description: >
@@ -4037,14 +4037,14 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Plugins\toolbarContainer.tabMenu.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Plugins/toolbarContainer.tabMenu.js
   scripts.json: 
     repo: jxlib
     requires: [ ]
     provides: [ ]
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\scripts.json
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/scripts.json
   tab.js: 
     name: Jx.Tab
     description: A single tab in a tab set.
@@ -4065,7 +4065,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tab\tab.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Tab/tab.js
   tabbox.js: 
     name: Jx.TabBox
     description: >
@@ -4088,7 +4088,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tab\tabbox.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Tab/tabbox.js
   tabset.js: 
     name: Jx.TabSet
     description: >
@@ -4104,7 +4104,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tab\tabset.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Tab/tabset.js
   container.js: 
     name: Jx.Toolbar.Container
     description: >
@@ -4129,7 +4129,7 @@ jxlib:
       - emblems.png
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\container.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Toolbar/container.js
   toolbar.item.js: 
     name: Jx.Toolbar.Item
     description: >
@@ -4143,7 +4143,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\toolbar.item.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Toolbar/toolbar.item.js
   toolbar.js: 
     name: Jx.Toolbar
     description: >
@@ -4162,7 +4162,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\toolbar.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Toolbar/toolbar.js
   toolbar.separator.js: 
     name: Jx.Toolbar.Separator
     description: >
@@ -4179,7 +4179,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Toolbar\toolbar.separator.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Toolbar/toolbar.separator.js
   tree.js: 
     name: Jx.Tree
     description: >
@@ -4199,7 +4199,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tree\tree.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Tree/tree.js
   treefolder.js: 
     name: Jx.TreeFolder
     description: >
@@ -4215,7 +4215,7 @@ jxlib:
     repo: jxlib
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tree\treefolder.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Tree/treefolder.js
   treeitem.js: 
     name: Jx.TreeItem
     description: An item in a tree.
@@ -4230,7 +4230,714 @@ jxlib:
       - tree_hover.png
     repo: jxlib
     path: >
-      D:\gits\JxCMS\modules\loader\media\jxlib\Source\Tree\treeitem.js
+      /media/Storage/gits/JxCMS/modules/loader/media/jxlib/Source/Tree/treeitem.js
+jx-extensions: 
+  adaptor.listview.js: 
+    name: Jx.Adaptor.ListView
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor
+    provides: 
+      - Jx.Adaptor.ListView
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/adaptors/adaptor.listview.js
+  adaptor.options.js: 
+    name: Jx.Adaptor.OptionGroup
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Adaptor
+    provides: 
+      - Jx.Adaptor.OptionGroup
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/adaptors/adaptor.options.js
+  listview.fill.js: 
+    name: Jx.Adaptor.ListView.Fill
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Adaptor.ListView
+      1: jxlib/Jx.ListItem
+    provides: 
+      - Jx.Adaptor.ListView.Fill
+    css: 
+    0: [ ]
+    images: 
+    1: [ ]
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/adaptors/listview.fill.js
+  options.fill.js: 
+    name: Jx.Adaptor.OptionGroup.Fill
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Adaptor.OptionGroup
+    provides: 
+      - Jx.Adaptor.OptionGroup.Fill
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/adaptors/options.fill.js
+  manager.js: 
+    name: Jx.Manager
+    description: >
+      This class is used to create managers to
+      control stores, widgets, or other
+      components
+    license: MIT-style license.
+    requires: 
+      - Core/Class
+    provides: 
+      - Jx.Manager
+      - Jx.StoreMgr
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/common/manager.js
+  preloader.js: 
+    name: Jx.Preloader
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx
+      1: Core/Class
+      2: Core/Class.Extras
+      3: Core/Hash
+      4: More/Assets
+    provides: 
+      - Jx.Preloader
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/common/preloader.js
+  request.js: 
+    name: Jx.Request
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/ Jx.Object
+      1: Core/Request.JSON
+      2: Core/Request.HTML
+      3: More/Spinner
+      4: jxlib/Jx.Dialog.Message
+    provides: 
+      - Jx.Request
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/common/request.js
+  columns.js: 
+    name: Jx.Layout.Columns
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Layout
+      1: More/Drag.Move
+    provides: 
+      - Jx.Layout.Columns
+    css: 
+      - columns
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/layouts/columns.js
+  section.js: 
+    name: Jx.Section
+    description: >
+      This class creates a basic folding
+      section.
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: jxlib/Jx.Slide
+    provides: 
+      - Jx.Section
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/layouts/section.js
+  license.txt: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/license.txt
+  connection.js: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/orm/air/connection.js
+  query.js: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/orm/query.js
+  sql.js: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/orm/sql.js
+  store.js: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/orm/store.js
+  editor.alignment.js: 
+    name: Jx.Plugin.Editor.Alignment
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.ButtonSet
+    provides: 
+      - Jx.Plugin.Editor.Alignment
+    images: 
+      0: text_align_left.png
+      1: text_align_center.png
+      2: text_align_right.png
+      3: text_align_justify.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.alignment.js
+  editor.block.js: 
+    name: Jx.Plugin.Editor.Block
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Field.Select
+      1: jx-extensions/Jx.Plugin.Editor
+    provides: 
+      - Jx.Plugin.Editor.Block
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.block.js
+  editor.bold.js: 
+    name: Jx.Plugin.Editor.Bold
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Plugin.Editor.Button
+      1: Core/Browser
+    provides: 
+      - Jx.Plugin.Editor.Bold
+    images: 
+      - text_bold.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.bold.js
+  editor.button.js: 
+    name: Jx.Plugin.Editor.Button
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Plugin.Editor
+      1: jxlib/Jx.Button
+    provides: 
+      - Jx.Plugin.Editor.Button
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.button.js
+  editor.buttonset.js: 
+    name: Jx.Plugin.Editor.ButtonSet
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Plugin.Editor
+      1: jxlib/Jx.ButtonSet
+    provides: 
+      - Jx.Plugin.Editor.ButtonSet
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.buttonset.js
+  editor.customstyles.js: 
+    name: Jx.Plugin.Editor.CustomStyles
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Plugin.Editor
+      1: jxlib/Jx.Field.Select
+    provides: 
+      - Jx.Plugin.Editor.CustomStyles
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.customstyles.js
+  editor.image.js: 
+    name: Jx.Plugin.Editor.Image
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Plugin.Editor
+      1: jxlib/Jx.Dialog.Prompt
+    provides: 
+      - Jx.Plugin.Editor.Image
+    images: 
+      - image.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.image.js
+  editor.indent.js: 
+    name: Jx.Plugin.Editor.Indent
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Indent
+    images: 
+      - text_indent.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.indent.js
+  editor.italic.js: 
+    name: Jx.Plugin.Editor.Italic
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Italic
+    images: 
+      - text_italic.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.italic.js
+  editor.link.js: 
+    name: Jx.Plugin.Editor.Link
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Plugin.Editor.Button
+      1: jxlib/Jx.Dialog.Message
+      2: jxlib/Jx.Dialog.Prompt
+    provides: 
+      - Jx.Plugin.Editor.Link
+    images: 
+      - link.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.link.js
+  editor.orderedlist.js: 
+    name: Jx.Plugin.Editor.Orderedlist
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Orderedlist
+    images: 
+      - text_list_numbers.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.orderedlist.js
+  editor.outdent.js: 
+    name: Jx.Plugin.Editor.Outdent
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Outdent
+    images: 
+      - text_indent_remove.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.outdent.js
+  editor.redo.js: 
+    name: Jx.Plugin.Editor.Redo
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Redo
+    images: 
+      - edit-redo.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.redo.js
+  editor.separator.js: 
+    name: Jx.Plugin.Editor.Separator
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Toolbar.Separator
+      1: jx-extensions/Jx.Plugin.Editor
+    provides: 
+      - Jx
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.separator.js
+  editor.strikethrough.js: 
+    name: Jx.Plugin.Editor.Strikethrough
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Strikethrough
+    images: 
+      - text_strikethrough.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.strikethrough.js
+  editor.toggle.js: 
+    name: Jx.Plugin.Editor.Toggle
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Toggle
+    images: 
+      - toggleview.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.toggle.js
+  editor.underline.js: 
+    name: Jx.Plugin.Editor.Underline
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Underline
+    images: 
+      - text_underline.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.underline.js
+  editor.undo.js: 
+    name: Jx.Plugin.Editor.Undo
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Undo
+    images: 
+      - edit-undo.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.undo.js
+  editor.unlink.js: 
+    name: Jx.Plugin.Editor.Unlink
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Unlink
+    images: 
+      - link_break.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.unlink.js
+  editor.unorderedlist.js: 
+    name: Jx.Plugin.Editor.Unorderedlist
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jx-extensions/Jx.Plugin.Editor.Button
+    provides: 
+      - Jx.Plugin.Editor.Unorderedlist
+    images: 
+      - text_list_bullets.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/editor.unorderedlist.js
+  plugin.editor.js: 
+    name: Jx.Plugin.Editor
+    description: 
+    license: MIT-style license.
+    requires: 
+      - jxlib/Jx.Plugin
+    provides: 
+      - Jx.Plugin.Editor
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/plugins/plugin.editor.js
+  scripts.json: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/scripts.json
+  accordian.js: 
+    repo: jx-extensions
+    requires: [ ]
+    provides: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/accordian.js
+  chromePanel.js: 
+    name: Jx.ChromePanel
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Dialog
+      1: More/Drag
+    provides: 
+      - Jx.ChromePanel
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/chromePanel.js
+  editor.js: 
+    name: Jx.Editor
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Widget
+      1: jxlib/Jx.Layout
+      2: jxlib/Jx.Toolbar.Container
+    provides: 
+      - Jx.Editor
+    css: 
+      - editor
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/editor.js
+  editor.selection.js: 
+    name: Jx.Editor.Selection
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Editor
+      1: jxlib/Jx.Object
+    provides: 
+      - Jx.Editor.Selection
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/editor.selection.js
+  field.editor.js: 
+    name: Jx.Field.Editor
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Field
+      1: jx-extensions/Jx.Editor
+    provides: 
+      - JJx.Field.Editorx
+    css: 
+      - field.editor
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/field.editor.js
+  field.options.js: 
+    name: Jx.Field.OptionGroup
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Field
+      1: jxlib/Jx.Field.Checkbox
+      2: jxlib/Jx.Field.Radio
+      3: jxlib/Jx.Styles
+    provides: 
+      - Jx.Field.OptionGroup
+    css: 
+      - optiongroup
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/field.options.js
+  panel.form.js: 
+    name: Jx.Panel.Form
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Panel
+      1: jxlib/Jx.Form
+      2: jxlib/Jx.Notifier.Float
+      3: jxlib/Jx.Notifier
+      4: jxlib/Jx.Plugin.Form.Validator
+      5: jxlib/Jx.Fieldset
+      6: jxlib/Jx.Notice
+    provides: 
+      - Jx.Panel.Form
+    css: 
+      - panel.form
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/panel.form.js
+  wizard.js: 
+    name: Jx.Dialog.Wizard
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jxlib/Jx.Dialog
+      1: jxlib/Jx.Toolbar
+      2: jxlib/Jx.Button
+      3: jxlib/Jx.Splitter
+      4: jxlib/Jx.ListView
+      5: jxlib/Jx.TabSet
+      6: jxlib/Jx.Tab
+      7: jx-extensions/Jx.Panel.Form
+    provides: 
+      - Jx.Dialog.Wizard
+    css: 
+      - wizard
+    images: 
+      0: arrow_left.png
+      1: arrow_right.png
+      2: cancel.png
+      3: tick.png
+    repo: jx-extensions
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/loader/media/jx-extensions/Source/widgets/wizard.js
+jxcore: 
+  modules.js: 
+    name: modules
+    description: Admin component for managing modules
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Section
+      1: jxlib/Jx.Store.Parser.JSON
+      2: jxlib/Jx.Store.Protocol.Ajax
+      3: jxlib/Jx.Store.Strategy.Full
+      4: jxlib/Jx.Store.Strategy.Save
+      5: jxlib/Jx.Store
+      6: jxlib/Jx.Panel
+      7: jxlib/Jx.Field.File
+      8: jxlib/Jx.Notice
+      9: jxlib/Jx.Notifier
+      10: jxlib/Jx.Button
+      11: jxlib/Jx.ListView
+      12: jxlib/Jx.ListItem
+    css: 
+      - modules
+    images: 
+      0: brick.png
+      1: brick_add.png
+      2: brick_delete.png
+      3: brick_edit.png
+      4: brick_error.png
+      5: brick_go.png
+      6: brick_link.png
+    provides: 
+      - modules
+    repo: jxcore
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/jxcore/media/jxcore/js/modules.js
+  settings.js: 
+    name: settings
+    description: Admin component for managing settings
+    license: MIT-style license.
+    css: 
+      - settings
+    provides: 
+      - settings
+    repo: jxcore
+    requires: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/jxcore/media/jxcore/js/settings.js
+admin: 
+  admin.js: 
+    name: admin
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: admin/menuSystem
+      1: jxlib/Jx.Layout
+      2: jxlib/Jx.Notifier.Float
+      3: jxlib/Jx.TabBox
+      4: jxlib/Jx.Plugin.ToolbarContainer.TabMenu
+      5: core/JSON
+    css: 
+      - admin
+    provides: 
+      - admin
+    repo: admin
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/admin/media/admin/js/admin.js
+  menuSystem.js: 
+    name: MenuSystem
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: jx-extensions/Jx.Request
+      1: jxlib/Jx.ButtonSet
+      2: jxlib/Jx.Toolbar
+      3: jxlib/Jx.Menu
+      4: jxlib/Jx.Menu.Submenu
+      5: jxlib/Jx.Menu.Item
+    provides: 
+      - menuSystem
+    repo: admin
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/admin/media/admin/js/menuSystem.js
+  request.mod.js: 
+    name: request.mod
+    description: 
+    license: MIT-style license.
+    requires: 
+      0: more/Spinner
+      1: core/request
+    provides: 
+      - request.mod
+    repo: admin
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/admin/media/admin/js/request.mod.js
+themes: 
+  theme.js: 
+    name: theme
+    description: theme module admin interface file
+    license: MIT-style license.
+    css: 
+      - theme
+    provides: 
+      - theme
+    repo: themes
+    requires: [ ]
+    optional: [ ]
+    path: >
+      /media/Storage/gits/JxCMS/modules/themes/media/themes/js/theme.js
 loader: 
   loader.js: 
     name: Loader
@@ -4257,7 +4964,7 @@ loader:
     repo: loader
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\loader\js\loader.js
+      /media/Storage/gits/JxCMS/modules/loader/media/loader/js/loader.js
   option.page.js: 
     name: Option.page
     description: >
@@ -4272,4 +4979,4 @@ loader:
     repo: loader
     optional: [ ]
     path: >
-      D:\gits\JxCMS\modules\loader\media\loader\js\option.page.js
+      /media/Storage/gits/JxCMS/modules/loader/media/loader/js/option.page.js
